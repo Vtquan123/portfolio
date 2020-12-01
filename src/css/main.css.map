@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/Helpers/_variables.scss",
+        "../scss/Helpers/_mixin.scss",
+        "../scss/Helpers/_function.scss",
+        "../scss/Base/_reset.scss",
+        "../scss/Base/_normalize.scss",
+        "../scss/Components/_button.scss",
+        "../scss/Layouts/_header.scss",
+        "../scss/Layouts/_footer.scss",
+        "../scss/Responsive/_lgScreen.scss",
+        "../scss/Responsive/_mdScreen.scss",
+        "../scss/Responsive/_smScreen.scss",
+        "../scss/Responsive/_xsScreen.scss",
+        "../scss/Themes/_dark.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
