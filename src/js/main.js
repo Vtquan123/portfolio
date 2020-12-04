@@ -31,7 +31,7 @@ queryElement(".social__menu").onclick = () => {
   getElementByID("social__link").classList.toggle("show");
 };
 
-window.onresize = () => {
+const windowResize = () => {
   const height = window.innerHeight;
   const width = window.innerWidth;
   if (width > 992) {
@@ -40,14 +40,24 @@ window.onresize = () => {
     } else {
       getElementByID("home").classList.remove("home__portrait--lg");
     }
-  } else if (width < 768) {
-    if (height > width) {
-      queryElement(".home__portrait").style.display = "none";
-      getElementByID("home").style.height = "unset";
-    } else {
+  } else {
+    if (height > 600) {
+      queryElement(".home__portrait").style.display = "block";
       getElementByID("home").style.height = "100vh";
+    } else {
+      queryElement(".home__portrait").style.display = "none";
+      getElementByID("home").style.height = "100vh";
+      if (height < 500) {
+        getElementByID("home").style.height = "unset";
+      }
     }
   }
+};
+window.onresize = () => {
+  windowResize();
+};
+window.onload = () => {
+  windowResize();
 };
 
 /* Typing effect */
