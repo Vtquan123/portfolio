@@ -31,7 +31,7 @@ queryElement(".social__menu").onclick = () => {
   getElementByID("social__link").classList.toggle("show");
 };
 
-window.onresize = () => {
+const windowResize = () => {
   const height = window.innerHeight;
   const width = window.innerWidth;
   if (width > 992) {
@@ -45,13 +45,23 @@ window.onresize = () => {
       queryElement(".home__portrait").style.display = "block";
       getElementByID("home").style.height = "100vh";
     } else {
-      getElementByID("home").style.height = "100vh";
       queryElement(".home__portrait").style.display = "none";
+      getElementByID("home").style.height = "100vh";
+<<<<<<< HEAD
+      queryElement(".home__portrait").style.display = "none";
+=======
+>>>>>>> 76367f333841950dcce837d9dbbdefc242a0c48a
       if (height < 500) {
         getElementByID("home").style.height = "unset";
       }
     }
   }
+};
+window.onresize = () => {
+  windowResize();
+};
+window.onload = () => {
+  windowResize();
 };
 
 /* Typing effect */
