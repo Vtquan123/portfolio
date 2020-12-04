@@ -40,12 +40,16 @@ window.onresize = () => {
     } else {
       getElementByID("home").classList.remove("home__portrait--lg");
     }
-  } else if (width < 768) {
-    if (height > width) {
-      queryElement(".home__portrait").style.display = "none";
-      getElementByID("home").style.height = "unset";
+  } else {
+    if (height > 600) {
+      queryElement(".home__portrait").style.display = "block";
+      getElementByID("home").style.height = "100vh";
     } else {
       getElementByID("home").style.height = "100vh";
+      queryElement(".home__portrait").style.display = "none";
+      if (height < 500) {
+        getElementByID("home").style.height = "unset";
+      }
     }
   }
 };
