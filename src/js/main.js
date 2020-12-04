@@ -47,10 +47,6 @@ const windowResize = () => {
     } else {
       queryElement(".home__portrait").style.display = "none";
       getElementByID("home").style.height = "100vh";
-<<<<<<< HEAD
-      queryElement(".home__portrait").style.display = "none";
-=======
->>>>>>> 76367f333841950dcce837d9dbbdefc242a0c48a
       if (height < 500) {
         getElementByID("home").style.height = "unset";
       }
