@@ -1,0 +1,23 @@
+.tooltip {
+  position: absolute;
+  height: 1.2rem;
+  width: 4.5rem;
+  top: 50%;
+  left: -220%;
+  border-radius: 1rem;
+  background-color: $color-grey-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s 0.1s ease-out;
+  transform-origin: 6rem center;
+  transform: translateY(-50%) rotate(30deg);
+  opacity: 0;
+  visibility: hidden;
+  span {
+    font-size: $fs-1 - 4;
+    font-weight: $fw-500;
+    color: $color-white;
+  }
+}

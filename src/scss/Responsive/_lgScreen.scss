@@ -1,0 +1,131 @@
+#header {
+  @include responsive(1024px) {
+    .header__navbar {
+      .navbar__config {
+        ul {
+          li {
+            a {
+              font-size: $fs-html - 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#home {
+  @include responsive(1024px) {
+    .home__container {
+      .home__about {
+        padding-top: $pd-20 + 10;
+        .home__about__content {
+          padding-bottom: $pd-8;
+          .home__name {
+            height: 130px;
+            h1 {
+              font-size: 2.5rem;
+              margin: $mg-4 0;
+              #typingText::after {
+                height: 40px;
+              }
+            }
+          }
+          .home__brief {
+            padding: $pd-6 $pd-4 $pd-6 0;
+            text-align: left;
+            font-size: $fs-1 + 1;
+          }
+        }
+        .home__about__cv {
+          .button__shadow {
+            margin-top: $mg-6;
+          }
+        }
+      }
+      .home__img {
+        .circle__background {
+          height: 400px;
+          width: 400px;
+          left: 62%;
+        }
+      }
+      .home__social {
+        right: -3rem;
+        bottom: 7%;
+        .social__container {
+          ul {
+            margin-bottom: $mg-4;
+          }
+        }
+      }
+      .home__see-more {
+        bottom: 7%;
+      }
+    }
+    &.home__portrait--lg {
+      .home__container {
+        .home__about {
+          padding-top: $pd-21;
+          .home__about__content {
+            .home__name {
+              margin-right: -200px;
+              h1 {
+                margin: $mg-8 0;
+              }
+            }
+          }
+          .home__brief {
+            padding: $pd-10 0;
+            margin-right: -50px;
+            font-size: $fs-html;
+          }
+        }
+        .home__img {
+          .potrait-1 {
+            left: 6%;
+            height: 66%;
+          }
+          .circle__background {
+            height: 500px;
+            width: 500px;
+            left: 55%;
+            top: 35%;
+          }
+        }
+        .home__see-more {
+          left: 0;
+          transform: unset;
+        }
+      }
+    }
+  }
+  @include responsive(1440px) {
+    .home__container {
+      .home__about {
+        .home__about__content {
+          .home__name {
+            h1 {
+              font-size: 3.8rem;
+              margin-right: -50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg-screen) {
+    .home__container {
+      .home__about {
+        .home__about__content {
+          .home__name {
+            h1 {
+              font-size: 3rem;
+              margin-right: -50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

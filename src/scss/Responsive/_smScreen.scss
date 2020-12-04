@@ -1,0 +1,83 @@
+#header {
+  @include responsive($sm-screen) {
+    padding: $pd-2 $pd-6 0;
+
+    .header__navbar {
+      .navbar__config {
+        .logo__config {
+          left: 0;
+          transform: none;
+          position: absolute;
+          @include responsive(425px) {
+            i {
+              font-size: $fs-6;
+              line-height: 64px;
+              height: unset;
+            }
+          }
+        }
+        .sidbar__toggle {
+          right: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+#home {
+  @include responsive($sm-screen) {
+    padding: 0;
+    .home__container {
+      width: 80%;
+      margin: 0 auto;
+      .home__about {
+        padding-top: $pd-20 + 10;
+        .home__about__content {
+          padding-bottom: $pd-8;
+          @include responsive(375px) {
+            & p:first-child {
+              font-size: $fs-1 + 2;
+            }
+          }
+          .home__name {
+            height: 100px;
+            h1 {
+              font-size: 2.5rem;
+              margin: $mg-4 0;
+              #typingText::after {
+                height: 40px;
+              }
+            }
+            @include responsive(375px) {
+              height: 70px;
+              h1 {
+                font-size: 2.2rem;
+                #typingText::after {
+                  height: 30px;
+                  bottom: 5px;
+                }
+              }
+            }
+          }
+          .home__brief {
+            padding: $pd-6 $pd-4 $pd-6 0;
+            text-align: left;
+            // display: none;
+            // &.short {
+            //   display: block;
+            // }
+            @include responsive(375px) {
+              font-size: $fs-1 + 1;
+            }
+          }
+        }
+        .home__about__cv {
+          .btn-cv {
+            animation: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.sidbar__toggle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .toggle-button {
+    .bar {
+      height: 3px;
+      width: 30px;
+      margin-bottom: 6px;
+      border-radius: 4px;
+      background-color: $color-white;
+      transition: all 0.5s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .bar-1.change {
+      transform: translateY(9px) rotate(-45deg);
+    }
+    .bar-2.change {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    .bar-3.change {
+      transform: translateY(-9px) rotate(45deg);
+    }
+  }
+}
+
+.btn-cv {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  background-color: $color-red-3;
+  border-radius: 30px;
+  animation: upDown 1s infinite ease alternate;
+  i {
+    line-height: 1;
+    margin-right: $mg-1;
+  }
+  &:hover {
+    box-shadow: none;
+    background-color: $color-red-1;
+  }
+  &:focus {
+    background-color: $color-red-3;
+  }
+}

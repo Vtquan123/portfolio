@@ -5,6 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="shortcut icon" href="./assets/icon/logo_color.ico" type="image/x-icon">
+
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- FONTAWESOME ICON -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/fonts/logo.css">
+
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="./css/animate.min.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -12,7 +36,147 @@
 
 <body>
     <!-- //////// START /////// -->
+    <header id="header">
+        <div class="header__navbar">
+            <nav class="navbar__config">
+                <div class="nav-wrapper ">
+                    <a href="#!" class="brand-logo logo__config ">
+                        <i class="icon-logo_q"></i>
+                        <img src="./assets/img/SVG/logoQ_color.svg" alt="">
+                    </a>
+                    <a href="#null" class="sidbar__toggle hide-on-large-only" id="sidebarToggler">
+                        <div class="toggle-button">
+                            <div class="bar bar-1"></div>
+                            <div class="bar bar-2"></div>
+                            <div class="bar bar-3"></div>
+                        </div>
+                    </a>
+                    <div class="header__sidebar hide-on-large-only" id="sidebar">
+                        <ul class="sidebar__config" id="side-nav">
+                            <li class="active nav-item__sm"><a href="#!">Home</a></li>
+                            <li class="nav-item__sm"><a href="#">About</a></li>
+                            <li class="nav-item__sm"><a href="#!">Resume</a></li>
+                            <li class="nav-item__sm"><a href="#!">Portfolio</a></li>
+                            <li class="nav-item__sm"><a href="#!">Contact</a></li>
+                        </ul>
+                    </div>
+                    <ul id="navbar__pages" class="right hide-on-med-and-down">
+                        <li class="nav-item active"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-item" href="#!">Resume</a></li>
+                        <li class="nav-item"><a href="#!">Portfolio</a></li>
+                        <li class="nav-item"><a href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- <div class="header__sidebar">
+            <ul class="sidebar__config" id="side-nav">
+                <a href="#!" class="brand-logo logo__config ">
+                    <i class="icon-logo_q"></i>
+                </a>
+                <li><a class="nav-item__sm" href="">Home</a></li>
+                <li><a class="nav-item__sm" href="">About</a></li>
+                <li><a class="nav-item__sm" href="">Resume</a></li>
+                <li><a class="nav-item__sm" href="">Portfolio</a></li>
+                <li><a class="nav-item__sm" href="">Contact</a></li>
+            </ul>
+        </div> -->
+
+    </header>
+    <section id="home">
+        <div class="home__container">
+            <div class="row">
+                <div class="col s12 l5 home__about">
+                    <div class="home__about__content">
+                        <p class="white-text">Welcome!</p>
+                        <div class="home__name">
+                            <h1 class="white-text" id="typing">I'm <span id="typingText"></span>
+                            </h1>
+                            <span class="item">Vu The Quan</span>
+                            <span class="item">a Front-end Developer</span>
+                        </div>
+                        <p class="home__brief white-text">I'm passionate about learning new
+                            technologies and always
+                            keep concentrated on improving my self skills. Being patient
+                            and responsible for working help me implement completely assinged tasks.</p>
+                        <!-- <p class="home__brief short white-text">I'm passionate about learning new
+                            technologies and always
+                            keep concentrated on improving my self skills. Being patient
+                            and responsible for working help me implement completely assinged tasks.</p> -->
+                    </div>
+                    <div class="home__about__cv">
+                        <button class="btn btn-cv darken-4 waves-light waves-effect">
+                            <i class="material-icons">file_download</i>
+                            Download CV</button>
+                        <div class="button__shadow hide-on-small-and-down"></div>
+                    </div>
+                </div>
+                <div class="col s12 l7 home__img hide-on-med-and-down">
+                    <img class="potrait-1" src="./assets/img/potrait.png" alt="">
+                    <div class="circle__background"></div>
+                </div>
+            </div>
+            <div class="home__social hide-on-small-and-down">
+                <div class="social__container">
+                    <ul id="social__link">
+                        <li>
+                            <a class="facebook" href="#null" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                                <div class="tooltip">
+                                    <span>My Facebook</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="git" href="#null" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <div class="tooltip">
+                                    <span>My Github</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="#null" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <div class="tooltip">
+                                    <span>My Instagram</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="codepen" href="#null" target="_blank">
+                                <i class="fab fa-codepen"></i>
+                                <div class="tooltip">
+                                    <span>My Codepen</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="social__menu" href="#!">
+                        <i class="fa fa-share-alt"></i>
+                        <div class="tooltip">
+                            <span>See my links</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <a href="#!" class="home__see-more hide-on-med-and-down">
+                <span class="dot"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+        <img class="home__portrait hide-on-small-and-down hide-on-large-only hide-on-extra-large-only"
+            src="./assets/img/potrait.png" alt="">
+        <div>
+            <!-- <img src="./assets/img/potrait.png" alt=""> -->
+        </div>
+    </section>
     <!-- //////// END //////// -->
+    <!-- MATERIALIZE JS -->
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/materializeConfig.js"></script>
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 </body>

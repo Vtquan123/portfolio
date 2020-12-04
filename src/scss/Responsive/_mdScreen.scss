@@ -1,0 +1,138 @@
+#header {
+  @include responsive($md-screen) {
+    padding: $pd-4 $pd-8 0;
+    .header__navbar {
+      .navbar__config {
+        position: relative;
+        // z-index: 100000;
+        .logo__config {
+          left: 0;
+          transform: none;
+          position: absolute;
+        }
+        .sidbar__toggle {
+          right: 0;
+          position: absolute;
+        }
+        .header__sidebar {
+          position: absolute;
+          height: 340px;
+          top: 120%;
+          width: 100%;
+          z-index: -1;
+          transform: scale(0.4);
+          transform-origin: top right;
+          transition: transform 0.4s cubic-bezier(0.325, 1.3, 0.21, 1);
+          opacity: 0;
+          visibility: hidden;
+          &.active {
+            opacity: 1;
+            transform: scale(1);
+            visibility: unset;
+          }
+          ul {
+            padding: $pd-4 0;
+            box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            li {
+              float: none;
+              text-align: center;
+              &:hover {
+                &::after {
+                  width: unset;
+                }
+              }
+              &.active {
+                &::after {
+                  width: 35%;
+                }
+              }
+              a {
+                &:active {
+                  color: $color-blue-1;
+                }
+              }
+            }
+            &::before {
+              content: "";
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.25);
+              background: linear-gradient(
+                40deg,
+                $color-green-1,
+                $color-green-2 60%
+              );
+              // background-color: #59d6d5;
+              z-index: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#home {
+  @include responsive($md-screen) {
+    position: relative;
+    .home__container {
+      .home__about {
+        .home__about__content {
+          .home__name {
+            height: 70px;
+            h1 {
+            }
+          }
+          .home__brief {
+          }
+        }
+        .home__about__cv {
+          .btn-cv {
+            animation: none;
+          }
+        }
+      }
+      .home__social {
+        right: unset;
+        left: 60px;
+        transform: translateX(-50%);
+        bottom: -28rem;
+        .social__container {
+          transform: rotate(90deg);
+          transform-origin: bottom left;
+
+          ul {
+            li {
+              a {
+                i {
+                  transform: rotate(-90deg);
+                }
+              }
+            }
+          }
+          .social__menu {
+            i {
+              transform: rotate(-90deg);
+            }
+          }
+          .tooltip {
+            display: none;
+          }
+        }
+      }
+    }
+    .home__portrait {
+      position: absolute;
+      height: 60%;
+      left: 70%;
+      bottom: -5%;
+      transform: translateX(-50%);
+    }
+  }
+}

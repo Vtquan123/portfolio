@@ -1,18 +1,21 @@
 @import "./Helpers/variables";
 @import "./Helpers/mixin";
 @import "./Helpers/function";
+@import "./Helpers/animation";
 
 @import "./Base/reset";
 @import "./Base/normalize";
 
 @import "./Components/button";
+@import "./Components/tooltip";
 
 @import "./Layouts/header";
 @import "./Layouts/footer";
 
+@import "./Pages/home";
+
 @import "./Responsive/lgScreen";
 @import "./Responsive/mdScreen";
 @import "./Responsive/smScreen";
-@import "./Responsive/xsScreen";
 
 @import "./Themes/dark";
