@@ -98,7 +98,7 @@ body {
   align-items: center;
   box-shadow: none;
   background-color: #f06a6a;
-  border-radius: 30px;
+  border-radius: 3px;
   animation: upDown 1s infinite ease alternate;
 }
 
@@ -113,6 +113,30 @@ body {
 }
 
 .btn-cv:focus {
+  background-color: #f06a6a;
+}
+
+.btn-social {
+  background-color: #ff6b6b;
+  box-shadow: none;
+  margin-top: 30px;
+  width: 8rem;
+}
+
+.btn-social a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #e6f4f1;
+}
+
+.btn-social:hover {
+  box-shadow: none;
+  background-color: #f06a6a;
+}
+
+.btn-social:focus {
   background-color: #f06a6a;
 }
 
@@ -149,6 +173,32 @@ body {
   top: 0;
   left: 0;
   z-index: 100000;
+  transition: all 0.3s;
+}
+
+#header.header__on {
+  padding-top: 0;
+  background-color: #e6f4f1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#header.header__on .header__navbar .navbar__config .logo__config i {
+  font-size: 40px;
+  color: rgba(0, 49, 52, 0.7);
+  transition: all 0.3s;
+}
+
+#header.header__on .header__navbar .navbar__config .sidbar__toggle .toggle-button .bar {
+  background-color: rgba(0, 49, 52, 0.7);
+}
+
+#header.header__on .header__navbar .navbar__config #navbar__pages li::after {
+  background-color: rgba(0, 49, 52, 0.7);
+}
+
+#header.header__on .header__navbar .navbar__config #navbar__pages li a {
+  color: rgba(0, 49, 52, 0.7);
+  font-weight: 500;
 }
 
 #header .header__navbar {
@@ -170,6 +220,7 @@ body {
   font-size: 50px;
   line-height: 64px;
   height: unset;
+  color: #e6f4f1;
 }
 
 #header .header__navbar .navbar__config .logo__config img {
@@ -186,6 +237,7 @@ body {
 }
 
 #header .header__navbar .navbar__config ul li a {
+  color: #e6f4f1;
   padding: 0 30px;
 }
 
@@ -197,12 +249,12 @@ body {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #e6f4f1;
   transition: all 0.3s;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 10px;
+  bottom: 15px;
 }
 
 #header .header__navbar .navbar__config ul li.active {
@@ -218,11 +270,11 @@ body {
 }
 
 #home {
-  height: 100vh;
   background: url("../assets/img/Background-3.jpg") no-repeat center;
   background-size: cover;
   padding: 0 80px;
   overflow: hidden;
+  height: 100vh;
 }
 
 #home .home__container {
@@ -240,6 +292,7 @@ body {
 }
 
 #home .home__container .home__about .home__about__content > p:first-child {
+  color: #e6f4f1;
   font-size: 20px;
   font-weight: 500;
   margin: 0;
@@ -251,6 +304,7 @@ body {
 }
 
 #home .home__container .home__about .home__about__content .home__name h1 {
+  color: #e6f4f1;
   margin: 40px 0;
   font-weight: 500;
   font-size: 4rem;
@@ -285,6 +339,7 @@ body {
 #home .home__container .home__about .home__about__content .home__brief {
   font-size: 14px;
   font-weight: 300;
+  color: #e6f4f1;
   letter-spacing: 1px;
   padding: 50px 0;
   padding-right: 70px;
@@ -357,7 +412,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #e6f4f1;
   text-align: center;
   transition: all 0.3s;
 }
@@ -410,7 +465,7 @@ body {
 }
 
 #home .home__container .home__social .social__container ul li a i {
-  color: #04a4a4;
+  color: rgba(0, 49, 52, 0.7);
 }
 
 #home .home__container .home__social .social__container ul li a.facebook:hover {
@@ -532,6 +587,201 @@ body {
   transform: translateX(-50%);
 }
 
+#about {
+  position: relative;
+  padding: 110px 100px 100px;
+}
+
+#about .about__background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #04a4a4, #2fa583);
+  z-index: -1;
+  clip-path: ellipse(110% 60% at 0% 0%);
+}
+
+#about .about__container {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+  background-color: #e6f4f1;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 30px 20px 30px;
+}
+
+#about .about__container .row {
+  margin-bottom: 0;
+}
+
+#about .about__container h1 {
+  font-size: 3.3rem;
+  text-align: center;
+  margin: 0 0 90px;
+  color: rgba(0, 49, 52, 0.9);
+  font-weight: 500;
+}
+
+#about .about__container h1 span:first-child {
+  border-bottom: 3px solid #ff6b6b;
+  padding-bottom: 3px;
+}
+
+#about .about__container h1 span:last-child {
+  color: #ff6b6b;
+}
+
+#about .about__container .about__content {
+  padding-right: 100px;
+}
+
+#about .about__container .about__content ul {
+  margin: 0 auto;
+}
+
+#about .about__container .about__content ul li:first-child {
+  padding-top: 0;
+}
+
+#about .about__container .about__content ul li {
+  list-style: none;
+  padding: 30px 0 0;
+}
+
+#about .about__container .about__content ul li .about__item {
+  font-size: 16px;
+  color: #003134;
+  border-bottom: 2px solid rgba(0, 49, 52, 0.7);
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#about .about__container .about__content ul li .about__item .about__icon {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  padding-left: 10px;
+  background-color: rgba(0, 49, 52, 0.7);
+  color: #e6f4f1;
+  border-radius: 2px 2px 0 2px;
+}
+
+#about .about__container .about__content ul li .about__item .about__icon i {
+  font-size: 25px;
+  line-height: 1;
+  margin-right: 10px;
+}
+
+#about .about__container .about__content ul li .about__item .about__text {
+  width: 60%;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1;
+}
+
+#about .about__container .about__content ul .about__social a {
+  display: inline-block;
+  text-decoration: none;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+  text-align: center;
+  transition: all 0.3s;
+  margin-right: 30px;
+}
+
+#about .about__container .about__content ul .about__social a i {
+  font-size: 16px;
+  line-height: 32px;
+  color: #e6f4f1;
+}
+
+#about .about__container .about__content ul .about__social a.facebook:hover {
+  background-color: #0b84ee;
+}
+
+#about .about__container .about__content ul .about__social a.facebook:hover i {
+  color: #fff;
+}
+
+#about .about__container .about__content ul .about__social a.git:hover {
+  background-color: #24292e;
+}
+
+#about .about__container .about__content ul .about__social a.git:hover i {
+  color: #fff;
+}
+
+#about .about__container .about__content ul .about__social a.instagram:hover {
+  background-color: #ed4956;
+}
+
+#about .about__container .about__content ul .about__social a.instagram:hover i {
+  color: #fff;
+}
+
+#about .about__container .about__content ul .about__social a.codepen:hover {
+  background-color: #1e1f26;
+}
+
+#about .about__container .about__content ul .about__social a.codepen:hover i {
+  color: #fff;
+}
+
+#about .about__container .about__img {
+  height: 350px;
+  position: relative;
+}
+
+#about .about__container .about__img .img__container {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  background: url("../assets/img/portrait-2y.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0px 5px rgba(0, 49, 52, 0.12), 0 0px 16px rgba(0, 49, 52, 0.175), 0 0px 71px rgba(0, 49, 52, 0.3);
+  border-radius: 3px;
+}
+
+#about .about__container .about__img::before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: 0;
+  top: -5.5%;
+  left: 22%;
+  border-radius: 2px 0 0 0;
+  border-top: 4px solid rgba(0, 49, 52, 0.7);
+  border-left: 4px solid rgba(0, 49, 52, 0.7);
+}
+
+#about .about__container .about__img::after {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: 0;
+  bottom: -5.5%;
+  right: 22%;
+  border-radius: 0 0 2px 0;
+  border-bottom: 4px solid rgba(0, 49, 52, 0.7);
+  border-right: 4px solid rgba(0, 49, 52, 0.7);
+}
+
 @media screen and (max-width: 1024px) {
   #header .header__navbar .navbar__config ul li a {
     font-size: 14px;
@@ -619,6 +869,94 @@ body {
   #home .home__container .home__about .home__about__content .home__name h1 {
     font-size: 3rem;
     margin-right: -50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #about {
+    padding: 110px 10px;
+  }
+  #about .about__container {
+    width: 85%;
+  }
+  #about .about__container h1 {
+    font-size: 3.2rem;
+  }
+  #about .about__container .about__img {
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  #about .about__container .about__img .img__container {
+    width: 70%;
+  }
+  #about .about__container .about__img::before {
+    left: 11%;
+  }
+  #about .about__container .about__img::after {
+    right: 11%;
+  }
+  #about .about__container .about__content {
+    padding: 0 10px;
+  }
+  #about .about__container .about__content ul {
+    padding-right: 30px;
+  }
+  #about .about__container .about__content ul li {
+    padding: 10px 0;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon {
+    width: 7rem;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  #about .about__container .about__content ul li .about__item .about__text {
+    font-size: 16px;
+  }
+  #about .about__container .about__content ul .about__social a {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  #about {
+    padding: 110px 10px;
+  }
+  #about .about__container .about__img .img__container {
+    width: 60%;
+  }
+  #about .about__container .about__img::before {
+    left: 16.5%;
+  }
+  #about .about__container .about__img::after {
+    right: 16.5%;
+  }
+  #about .about__container .about__content {
+    padding: 0 10px;
+  }
+  #about .about__container .about__content ul {
+    padding-right: 30px;
+  }
+  #about .about__container .about__content ul li {
+    padding: 10px 0;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon {
+    width: 7rem;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  #about .about__container .about__content ul li .about__item .about__text {
+    font-size: 16px;
+  }
+  #about .about__container .about__content ul .about__social a {
+    margin-right: 25px;
   }
 }
 
@@ -726,26 +1064,102 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  #about {
+    padding: 100px 0;
+  }
+  #about .about__container h1 {
+    font-size: 2.8rem;
+  }
+  #about .about__container .about__img {
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  #about .about__container .about__img .img__container {
+    width: 50%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 800px) {
+  #about .about__container .about__img .img__container {
+    width: 65%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about .about__container .about__img::before {
+    left: 22%;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 800px) {
+  #about .about__container .about__img::before {
+    left: 14.5%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about .about__container .about__img::after {
+    right: 22%;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 800px) {
+  #about .about__container .about__img::after {
+    right: 14.5%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about .about__container .about__content {
+    padding: 0 50px;
+  }
+  #about .about__container .about__content ul {
+    padding-right: 0;
+  }
+  #about .about__container .about__content ul li {
+    padding: 10px 0;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon {
+    width: 7rem;
+    font-size: 17px;
+    margin-right: 40px;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon i {
+    font-size: 17px;
+    margin-right: 5px;
+  }
+  #about .about__container .about__content ul li .about__item .about__text {
+    font-size: 17px;
+  }
+  #about .about__container .about__content ul .about__social {
+    text-align: center;
+  }
+  #about .about__container .about__content ul .about__social a {
+    margin-right: 25px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #header {
     padding: 10px 30px 0;
+  }
+  #header .header__navbar .navbar__config {
+    height: 50px;
+    line-height: 50px;
   }
   #header .header__navbar .navbar__config .logo__config {
     left: 0;
     transform: none;
     position: absolute;
   }
-}
-
-@media screen and (max-width: 600px) and (max-width: 425px) {
   #header .header__navbar .navbar__config .logo__config i {
-    font-size: 40px;
-    line-height: 64px;
+    font-size: 35px !important;
+    line-height: inherit;
     height: unset;
   }
-}
-
-@media screen and (max-width: 600px) {
   #header .header__navbar .navbar__config .sidbar__toggle {
     right: 0;
     position: absolute;
@@ -816,6 +1230,155 @@ body {
 @media screen and (max-width: 600px) {
   #home .home__container .home__about .home__about__cv .btn-cv {
     animation: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    padding: 70px 0;
+  }
+  #about .about__container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 70px;
+  }
+  #about .about__container .about__img {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  #about .about__container .about__img .img__container {
+    width: 65%;
+    height: 300px;
+  }
+  #about .about__container .about__img::before {
+    left: 13%;
+  }
+  #about .about__container .about__img::after {
+    right: 13%;
+  }
+  #about .about__container .about__content {
+    padding: 0 5px 0 5px;
+  }
+  #about .about__container .about__content ul li {
+    padding: 0;
+    margin: 30px 0;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon {
+    width: 5.5rem;
+    font-size: 13px;
+    margin-right: 30px;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon i {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  #about .about__container .about__content ul li .about__item .about__text {
+    font-size: 14px;
+  }
+  #about .about__container .about__content ul .about__social {
+    text-align: center;
+  }
+  #about .about__container .about__content ul .about__social a {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about {
+    padding: 70px 0;
+  }
+  #about .about__container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 375px) {
+  #about .about__container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about__container .about__img {
+    height: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 375px) {
+  #about .about__container .about__img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about__container .about__img .img__container {
+    width: 75%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 375px) {
+  #about .about__container .about__img .img__container {
+    width: 70%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about__container .about__img::before {
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 375px) {
+  #about .about__container .about__img::before {
+    height: 80px;
+    width: 80px;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about__container .about__img::after {
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 375px) {
+  #about .about__container .about__img::after {
+    height: 80px;
+    width: 80px;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .about__container .about__content {
+    padding: 0;
+  }
+  #about .about__container .about__content ul li {
+    padding: 0;
+    margin: 20px 0;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon {
+    width: 5rem;
+    font-size: 11px;
+    margin-right: 15px;
+  }
+  #about .about__container .about__content ul li .about__item .about__icon i {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  #about .about__container .about__content ul li .about__item .about__text {
+    font-size: 10px;
+  }
+  #about .about__container .about__content ul .about__social {
+    text-align: center;
+    margin: 0;
+  }
+  #about .about__container .about__content ul .about__social a {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

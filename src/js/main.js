@@ -60,6 +60,17 @@ window.onload = () => {
   windowResize();
 };
 
+window.onscroll = () => {
+  const offset = window.pageYOffset;
+  if (offset > 10) {
+    getElementByID("header").classList.add("header__on");
+    getElementByID("social__link").classList.remove("show");
+  } else {
+    getElementByID("header").classList.remove("header__on");
+    getElementByID("social__link").classList.add("show");
+  }
+};
+
 /* Typing effect */
 let wrapper;
 let sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

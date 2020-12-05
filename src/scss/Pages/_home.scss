@@ -1,9 +1,10 @@
 #home {
-  height: 100vh;
   background: url("../assets/img/Background-3.jpg") no-repeat center;
   background-size: cover;
   padding: 0 $pd-16;
   overflow: hidden;
+  height: 100vh;
+  // box-shadow: 0 2px 50px 0 rgba(255, 255, 255, 0.5);
   .home__container {
     max-width: 1600px;
     margin: 0 auto;
@@ -13,6 +14,7 @@
       .home__about__content {
         padding-bottom: $pd-12;
         & > p:first-child {
+          color: $color-grey-3;
           font-size: $pd-4;
           font-weight: $fw-500;
           margin: 0;
@@ -21,6 +23,7 @@
         .home__name {
           height: 130px;
           h1 {
+            color: $color-grey-3;
             margin: $mg-8 0;
             font-weight: $fw-500;
             font-size: 4rem;
@@ -58,6 +61,7 @@
         .home__brief {
           font-size: $fs-html - 2;
           font-weight: $fw-300;
+          color: $color-grey-3;
           letter-spacing: 1px;
           padding: $pd-10 0;
           padding-right: $pd-14;
@@ -133,7 +137,7 @@
           height: 40px;
           width: 40px;
           border-radius: 50%;
-          background-color: $color-white;
+          background-color: $color-grey-3;
           text-align: center;
           transition: all 0.3s;
           i {
@@ -176,7 +180,7 @@
               transform: translateX(-50%);
               margin: $mg-4 0;
               i {
-                color: $color-green-1;
+                color: $color-green-5;
               }
               &.facebook:hover {
                 background-color: #0b84ee;

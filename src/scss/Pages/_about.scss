@@ -1,0 +1,171 @@
+#about {
+  position: relative;
+  padding: $pd-20 + 10 $pd-20 $pd-20;
+  .about__background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, $color-green-1, $color-green-4);
+    z-index: -1;
+    clip-path: ellipse(110% 60% at 0% 0%);
+  }
+  .about__container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+    background-color: $color-grey-3;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: $pd-6 $pd-4 $pd-6;
+    .row {
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: 3.3rem;
+      text-align: center;
+      margin: 0 0 $mg-16;
+      color: $color-green-6;
+      font-weight: $fw-500;
+      & span:first-child {
+        border-bottom: 3px solid $color-red-1;
+        padding-bottom: $pd-1 - 2;
+      }
+      & span:last-child {
+        color: $color-red-1;
+      }
+    }
+    .about__content {
+      padding-right: $pd-20;
+      ul {
+        margin: 0 auto;
+        & li:first-child {
+          padding-top: 0;
+        }
+        li {
+          list-style: none;
+          padding: $pd-6 0 0;
+          .about__item {
+            font-size: $fs-html;
+            color: $color-green-3;
+            border-bottom: 2px solid $color-green-5;
+            line-height: 2;
+
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            .about__icon {
+              width: 8rem;
+              display: flex;
+              align-items: center;
+              margin-right: $mg-6;
+              padding-left: $pd-2;
+              background-color: $color-green-5;
+              color: $color-grey-3;
+              border-radius: 2px 2px 0 2px;
+              i {
+                font-size: $fs-3;
+                line-height: 1;
+                margin-right: $mg-2;
+              }
+            }
+            .about__text {
+              width: 60%;
+              font-weight: $fw-500;
+              font-size: $fs-html + 1;
+              line-height: 1;
+            }
+          }
+        }
+        .about__social {
+          a {
+            display: inline-block;
+            text-decoration: none;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background-color: $color-red-1;
+            text-align: center;
+            transition: all 0.3s;
+            margin-right: $mg-6;
+            i {
+              font-size: $fs-html;
+              line-height: 32px;
+              color: $color-grey-3;
+            }
+            &.facebook:hover {
+              background-color: #0b84ee;
+              i {
+                color: $color-white;
+              }
+            }
+            &.git:hover {
+              background-color: #24292e;
+              i {
+                color: $color-white;
+              }
+            }
+            &.instagram:hover {
+              background-color: #ed4956;
+              i {
+                color: $color-white;
+              }
+            }
+            &.codepen:hover {
+              background-color: #1e1f26;
+              i {
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .about__img {
+      height: 350px;
+      position: relative;
+      .img__container {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        background: url("../assets/img/portrait-2y.jpg") no-repeat center center;
+        background-size: cover;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0px 5px rgba(0, 49, 52, 0.12),
+          0 0px 16px rgba(0, 49, 52, 0.175), 0 0px 71px rgba(0, 49, 52, 0.3);
+        border-radius: 3px;
+      }
+      &::before {
+        content: "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        z-index: 0;
+        top: -5.5%;
+        left: 22%;
+        border-radius: 2px 0 0 0;
+        border-top: 4px solid $color-green-5;
+        border-left: 4px solid $color-green-5;
+      }
+      &::after {
+        content: "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        z-index: 0;
+        bottom: -5.5%;
+        right: 22%;
+        border-radius: 0 0 2px 0;
+
+        border-bottom: 4px solid $color-green-5;
+        border-right: 4px solid $color-green-5;
+      }
+    }
+  }
+}

@@ -36,11 +36,12 @@
 
 <body>
     <!-- //////// START /////// -->
+    <!-- HEADER -->
     <header id="header">
         <div class="header__navbar">
             <nav class="navbar__config">
                 <div class="nav-wrapper ">
-                    <a href="#!" class="brand-logo logo__config ">
+                    <a href="index.html" class="brand-logo logo__config ">
                         <i class="icon-logo_q"></i>
                         <img src="./assets/img/SVG/logoQ_color.svg" alt="">
                     </a>
@@ -54,7 +55,7 @@
                     <div class="header__sidebar hide-on-large-only" id="sidebar">
                         <ul class="sidebar__config" id="side-nav">
                             <li class="active nav-item__sm"><a href="#!">Home</a></li>
-                            <li class="nav-item__sm"><a href="#">About</a></li>
+                            <li class="nav-item__sm"><a href="#about">About</a></li>
                             <li class="nav-item__sm"><a href="#!">Resume</a></li>
                             <li class="nav-item__sm"><a href="#!">Portfolio</a></li>
                             <li class="nav-item__sm"><a href="#!">Contact</a></li>
@@ -62,7 +63,7 @@
                     </div>
                     <ul id="navbar__pages" class="right hide-on-med-and-down">
                         <li class="nav-item active"><a href="#">Home</a></li>
-                        <li class="nav-item"><a href="#!">About</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-item" href="#!">Resume</a></li>
                         <li class="nav-item"><a href="#!">Portfolio</a></li>
                         <li class="nav-item"><a href="#!">Contact</a></li>
@@ -84,14 +85,16 @@
         </div> -->
 
     </header>
+
+    <!-- HOME -->
     <section id="home">
         <div class="home__container">
             <div class="row">
                 <div class="col s12 l5 home__about">
                     <div class="home__about__content">
-                        <p class="white-text">Welcome!</p>
+                        <p>Welcome!</p>
                         <div class="home__name">
-                            <h1 class="white-text" id="typing">I'm <span id="typingText"></span>
+                            <h1 id="typing">I'm <span id="typingText"></span>
                             </h1>
                             <span class="item">Vu The Quan</span>
                             <span class="item">a Front-end Developer</span>
@@ -117,9 +120,9 @@
                     <div class="circle__background"></div>
                 </div>
             </div>
-            <div class="home__social hide-on-small-and-down">
+            <div class="home__social hide-on-small-and-down" id="mySocial">
                 <div class="social__container">
-                    <ul id="social__link">
+                    <ul id="social__link" class="show">
                         <li>
                             <a class="facebook" href="#null" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
@@ -162,16 +165,96 @@
                 </div>
 
             </div>
-            <a href="#!" class="home__see-more hide-on-med-and-down">
+            <a href="#about" class="home__see-more hide-on-med-and-down">
                 <span class="dot"></span>
                 <span class="line"></span>
             </a>
         </div>
         <img class="home__portrait hide-on-small-and-down hide-on-large-only hide-on-extra-large-only"
             src="./assets/img/potrait.png" alt="">
-        <div>
-            <!-- <img src="./assets/img/potrait.png" alt=""> -->
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about__background"></div>
+        <div class="about__container container">
+            <h1><span>About</span> <span>Me</span></h1>
+            <div class="row">
+                <div class="col s12 l6 about__img">
+                    <div class="img__container">
+                        <!-- <img src="./assets/img/potrait-2.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="col s12 l6 about__content">
+                    <ul>
+                        <li>
+                            <p class="about__item">
+                                <span class="about__icon">
+                                    <i class="material-icons">person</i>Name:
+                                </span>
+                                <span class="about__text">
+                                    Vu The Quan
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="about__item">
+                                <span class="about__icon">
+                                    <i class="material-icons">location_on</i>Address:
+                                </span>
+                                <span class="about__text">
+                                    Hai Boi, Dong Anh, Hanoi
+                                </span>
+                            </p>
+
+                        </li>
+                        <li>
+                            <p class="about__item">
+                                <span class="about__icon">
+                                    <i class="material-icons">email</i>Email:
+                                </span>
+                                <span class="about__text">
+                                    vtquan124@gmail.com
+                                </span>
+                            </p>
+
+                        </li>
+                        <li>
+                            <p class="about__item">
+                                <span class="about__icon">
+                                    <i class="material-icons">phone</i>Phone:
+                                </span>
+                                <span class="about__text">
+                                    039-667-4917
+                                </span>
+                            </p>
+
+                        </li>
+                        <li class="about__social">
+                            <a class="facebook" href="#null" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="git" href="https://github.com/Vtquan123" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="instagram" href="#null" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="codepen" href="#null" target="_blank">
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+
     </section>
     <!-- //////// END //////// -->
     <!-- MATERIALIZE JS -->

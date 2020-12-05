@@ -129,3 +129,100 @@
     }
   }
 }
+
+#about {
+  @include responsive($lg-screen) {
+    padding: $pd-20 + 10 $pd-2;
+    .about__container {
+      width: 85%;
+      h1 {
+        font-size: 3.2rem;
+      }
+      .about__img {
+        height: 350px;
+        margin-bottom: $mg-10;
+        .img__container {
+          width: 70%;
+        }
+        &::before {
+          left: 11%;
+        }
+        &::after {
+          right: 11%;
+        }
+      }
+      .about__content {
+        padding: 0 $pd-2;
+        ul {
+          padding-right: $pd-6;
+          li {
+            padding: $pd-2 0;
+            .about__item {
+              .about__icon {
+                width: 7rem;
+                font-size: $fs-html;
+                margin-right: $mg-8;
+                i {
+                  font-size: $fs-html;
+                  margin-right: $mg-1;
+                }
+              }
+              .about__text {
+                font-size: $fs-html;
+              }
+            }
+          }
+          .about__social {
+            a {
+              margin-right: $mg-5;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1201px) and (max-width: 1400px) {
+    padding: $pd-20 + 10 $pd-2;
+    .about__container {
+      .about__img {
+        .img__container {
+          width: 60%;
+        }
+        &::before {
+          left: 16.5%;
+        }
+        &::after {
+          right: 16.5%;
+        }
+      }
+      .about__content {
+        padding: 0 $pd-2;
+        ul {
+          padding-right: $pd-6;
+          li {
+            padding: $pd-2 0;
+            .about__item {
+              .about__icon {
+                width: 7rem;
+                font-size: $fs-html;
+                margin-right: $mg-8;
+                i {
+                  font-size: $fs-html;
+                  margin-right: $mg-1;
+                }
+              }
+              .about__text {
+                font-size: $fs-html;
+              }
+            }
+          }
+          .about__social {
+            a {
+              margin-right: $mg-5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

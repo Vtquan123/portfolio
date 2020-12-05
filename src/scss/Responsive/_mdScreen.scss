@@ -136,3 +136,67 @@
     }
   }
 }
+
+#about {
+  @include responsive($md-screen) {
+    padding: $pd-20 0;
+    .about__container {
+      h1 {
+        font-size: 2.8rem;
+      }
+      .about__img {
+        height: 350px;
+        margin-bottom: $mg-10;
+        .img__container {
+          width: 50%;
+          height: 350px;
+          @include responsive(800px) {
+            width: 65%;
+            height: 350px;
+          }
+        }
+        &::before {
+          left: 22%;
+          @include responsive(800px) {
+            left: 14.5%;
+          }
+        }
+        &::after {
+          right: 22%;
+          @include responsive(800px) {
+            right: 14.5%;
+          }
+        }
+      }
+      .about__content {
+        padding: 0 $pd-10;
+        ul {
+          padding-right: 0;
+          li {
+            padding: $pd-2 0;
+            .about__item {
+              .about__icon {
+                width: 7rem;
+                font-size: $fs-html + 1;
+                margin-right: $mg-8;
+                i {
+                  font-size: $fs-html + 1;
+                  margin-right: $mg-1;
+                }
+              }
+              .about__text {
+                font-size: $fs-html + 1;
+              }
+            }
+          }
+          .about__social {
+            text-align: center;
+            a {
+              margin-right: $mg-5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

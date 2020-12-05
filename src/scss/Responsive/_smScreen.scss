@@ -4,16 +4,16 @@
 
     .header__navbar {
       .navbar__config {
+        height: 50px;
+        line-height: 50px;
         .logo__config {
           left: 0;
           transform: none;
           position: absolute;
-          @include responsive(425px) {
-            i {
-              font-size: $fs-6;
-              line-height: 64px;
-              height: unset;
-            }
+          i {
+            font-size: $fs-5 !important;
+            line-height: inherit;
+            height: unset;
           }
         }
         .sidbar__toggle {
@@ -75,6 +75,134 @@
         .home__about__cv {
           .btn-cv {
             animation: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+#about {
+  @include responsive($sm-screen) {
+    padding: $pd-14 0;
+    .about__container {
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: $mg-14;
+      }
+      .about__img {
+        height: 300px;
+        margin-bottom: $mg-6;
+        .img__container {
+          width: 65%;
+          height: 300px;
+        }
+        &::before {
+          left: 13%;
+        }
+        &::after {
+          right: 13%;
+        }
+      }
+      .about__content {
+        padding: 0 $pd-1 0 $pd-1;
+        ul {
+          li {
+            padding: 0;
+            margin: $mg-6 0;
+            .about__item {
+              .about__icon {
+                width: 5.5rem;
+                font-size: $fs-html - 3;
+                margin-right: $mg-6;
+                i {
+                  font-size: $fs-html - 3;
+                  margin-right: $mg-1;
+                }
+              }
+              .about__text {
+                font-size: $fs-html - 2;
+              }
+            }
+          }
+          .about__social {
+            text-align: center;
+            a {
+              margin-right: $mg-5;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(500px) {
+    padding: $pd-14 0;
+    .about__container {
+      h1 {
+        @include responsive(375px) {
+          font-size: 2rem;
+        }
+        font-size: 2.5rem;
+        margin-bottom: $mg-12;
+      }
+      .about__img {
+        height: 250px;
+        margin-bottom: $mg-6;
+        @include responsive(375px) {
+          height: 200px;
+        }
+        .img__container {
+          width: 75%;
+          height: 250px;
+          @include responsive(375px) {
+            width: 70%;
+            height: 200px;
+          }
+        }
+        &::before {
+          @include responsive(375px) {
+            height: 80px;
+            width: 80px;
+            left: 10%;
+          }
+          left: 8%;
+        }
+        &::after {
+          @include responsive(375px) {
+            height: 80px;
+            width: 80px;
+            right: 10%;
+          }
+          right: 8%;
+        }
+      }
+      .about__content {
+        padding: 0;
+        ul {
+          li {
+            padding: 0;
+            margin: $mg-4 0;
+            .about__item {
+              .about__icon {
+                width: 5rem;
+                font-size: $fs-1 - 1;
+                margin-right: $mg-3;
+                i {
+                  font-size: $fs-1;
+                  margin-right: $mg-1;
+                }
+              }
+              .about__text {
+                font-size: $fs-1 - 2;
+              }
+            }
+          }
+          .about__social {
+            text-align: center;
+            margin: 0;
+            a {
+              margin-right: $mg-2;
+            }
           }
         }
       }
