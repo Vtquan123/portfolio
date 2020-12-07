@@ -1,4 +1,4 @@
-.sidbar__toggle {
+.sidebar__toggle {
   height: 100%;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   align-items: center;
   box-shadow: none;
   background-color: $color-red-3;
-  border-radius: 3px;
+  border-radius: 30px;
   animation: upDown 1s infinite ease alternate;
   i {
     line-height: 1;

@@ -7,7 +7,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, $color-green-1, $color-green-4);
+    background-color: $color-green-5;
     z-index: -1;
     clip-path: ellipse(110% 60% at 0% 0%);
   }
@@ -22,20 +22,6 @@
     padding: $pd-6 $pd-4 $pd-6;
     .row {
       margin-bottom: 0;
-    }
-    h1 {
-      font-size: 3.3rem;
-      text-align: center;
-      margin: 0 0 $mg-16;
-      color: $color-green-6;
-      font-weight: $fw-500;
-      & span:first-child {
-        border-bottom: 3px solid $color-red-1;
-        padding-bottom: $pd-1 - 2;
-      }
-      & span:last-child {
-        color: $color-red-1;
-      }
     }
     .about__content {
       padding-right: $pd-20;

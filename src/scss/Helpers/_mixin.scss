@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin text($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}

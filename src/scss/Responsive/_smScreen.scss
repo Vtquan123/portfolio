@@ -1,8 +1,9 @@
 #header {
   @include responsive($sm-screen) {
-    padding: $pd-2 $pd-6 0;
-
+    margin-top: $mg-2;
+    padding: 0 $pd-6;
     .header__navbar {
+      margin: 0 $mg-2 * -1;
       .navbar__config {
         height: 50px;
         line-height: 50px;
@@ -181,7 +182,10 @@
         ul {
           li {
             padding: 0;
-            margin: $mg-4 0;
+            margin: $mg-4 $mg-3;
+            @include responsive(375px) {
+              margin: $mg-4 0;
+            }
             .about__item {
               .about__icon {
                 width: 5rem;
@@ -193,7 +197,10 @@
                 }
               }
               .about__text {
-                font-size: $fs-1 - 2;
+                font-size: $fs-1;
+                @include responsive(375px) {
+                  font-size: $fs-1 - 1;
+                }
               }
             }
           }
@@ -202,6 +209,148 @@
             margin: 0;
             a {
               margin-right: $mg-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#resume {
+  @include responsive($sm-screen) {
+    .resume__container {
+      .section__title {
+        font-size: $fs-11;
+        margin-bottom: $mg-10;
+      }
+      .resume__experience {
+        .experience__title {
+          .side-title {
+            font-size: $fs-11 - 0.2;
+            transform: translate(-48%, 260%) rotate(-90deg);
+          }
+        }
+        .resume__block {
+          &:last-child {
+            padding-bottom: $pd-8 !important;
+          }
+          .block__content {
+            margin: 0 0 0 $mg-4;
+            h4 {
+              font-size: $fs-html;
+            }
+          }
+        }
+      }
+      .resume__education {
+        .education__title {
+          .side-title {
+            font-size: $fs-11 - 0.2;
+            transform: translate(-55%, 250%) rotate(-90deg);
+          }
+        }
+        .resume__block {
+          &:last-child {
+            padding-bottom: $pd-8 !important;
+          }
+          .block__content {
+            margin: 0 $mg-4 0 0;
+            h4 {
+              font-size: $fs-html;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(374px) {
+    .resume__container {
+      .resume__experience {
+        .row .col__config {
+          padding: 0.25rem;
+        }
+        .experience__title {
+          .side-title {
+            font-size: $fs-11 - 0.3;
+            transform: translate(-55%, 225%) rotate(-90deg);
+          }
+        }
+        .resume__block {
+          &:last-child {
+            padding-bottom: $pd-8 !important;
+          }
+          .block__content {
+            padding: $pd-3;
+            margin: 0 0 0 $mg-3;
+          }
+        }
+      }
+      .resume__education {
+        .row .col__config {
+          padding: 0.25rem;
+        }
+        .education__title {
+          .side-title {
+            font-size: $fs-11 - 0.3;
+            transform: translate(-45%, 205%) rotate(-90deg);
+          }
+        }
+        .resume__block {
+          &:last-child {
+            padding-bottom: 0 !important;
+          }
+          .block__content {
+            padding: $pd-3;
+            margin: 0 $mg-3 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#skills {
+  @include responsive($sm-screen) {
+    .skills__container {
+      .skills__md {
+        li {
+          margin: 0 $mg-1 $mg-4;
+          .collapsible-header {
+            background-color: transparent;
+            border: none;
+            .skills__unit {
+              font-size: $fs-html;
+              margin: 0;
+            }
+          }
+          .collapsible-body {
+            .skills__item {
+              width: 45%;
+              // height: 40px;
+              img {
+                width: 60px;
+              }
+            }
+          }
+          &.active {
+            .collapsible-body {
+              display: flex !important;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              .skills__text {
+                font-size: $fs-1;
+                // line-height: 36px;
+              }
+            }
+          }
+
+          &.skills__knowledge,
+          &.skills__language {
+            .collapsible-body {
+              .skills__item {
+                width: 90%;
+              }
             }
           }
         }

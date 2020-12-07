@@ -8,12 +8,17 @@
 
 @import "./Components/button";
 @import "./Components/tooltip";
+@import "./Components/title";
+@import "./Components/resumeBlock";
+@import "./Components/resumeSideTitle";
 
 @import "./Layouts/header";
 @import "./Layouts/footer";
 
 @import "./Pages/home";
 @import "./Pages/about";
+@import "./Pages/resume";
+@import "./Pages/skills";
 
 @import "./Responsive/lgScreen";
 @import "./Responsive/mdScreen";

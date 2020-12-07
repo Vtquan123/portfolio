@@ -1,5 +1,6 @@
 #header {
-  padding: $pd-4 $pd-14 0;
+  padding: 0 $pd-14;
+  margin-top: 0;
   background-color: transparent;
   position: fixed;
   display: block;
@@ -9,38 +10,9 @@
   z-index: 100000;
   transition: all 0.3s;
   &.header__on {
-    padding-top: 0;
-    background-color: $color-grey-3;
+    background-color: $color-white;
     border-bottom: 1px solid $color-grey-4;
-    .header__navbar {
-      .navbar__config {
-        .logo__config {
-          i {
-            font-size: $fs-6;
-            color: $color-green-5;
-            transition: all 0.3s;
-          }
-        }
-        .sidbar__toggle {
-          .toggle-button {
-            .bar {
-              background-color: $color-green-5;
-            }
-          }
-        }
-        #navbar__pages {
-          li {
-            &::after {
-              background-color: $color-green-5;
-            }
-            a {
-              color: $color-green-5;
-              font-weight: $fw-500;
-            }
-          }
-        }
-      }
-    }
+    margin-top: 0;
   }
   .header__navbar {
     max-width: 1600px;
@@ -52,10 +24,10 @@
         position: relative;
         margin-left: 0;
         i {
-          font-size: $pd-10;
+          font-size: $fs-6;
           line-height: 64px;
           height: unset;
-          color: $color-grey-3;
+          color: $color-red-3;
         }
         img {
           position: absolute;
@@ -70,7 +42,8 @@
         li {
           position: relative;
           a {
-            color: $color-grey-3;
+            color: $color-green-5;
+            font-weight: $fw-500;
             padding: 0 $pd-6;
             &:hover {
               background-color: transparent;
@@ -80,7 +53,7 @@
             content: "";
             width: 0;
             height: 2px;
-            background-color: $color-grey-3;
+            background-color: $color-green-5;
             transition: all 0.3s;
             position: absolute;
             left: 50%;

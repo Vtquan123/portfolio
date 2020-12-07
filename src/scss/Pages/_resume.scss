@@ -1,0 +1,67 @@
+#resume {
+  padding: $pd-14 0 $pd-10;
+  background-color: $color-grey-3;
+  .resume__container {
+    .resume__experience {
+      .experience__title {
+        position: relative;
+        .side-title {
+          transform: translate(-40%, 220%) rotate(-90deg);
+        }
+      }
+      .resume__block {
+        .block__content {
+          ul {
+            li {
+              list-style: circle !important;
+              margin-left: $mg-4;
+              margin-bottom: $mg-2;
+              &.engineer {
+                color: $color-green-8;
+                font-weight: $fw-600;
+              }
+            }
+          }
+        }
+      }
+    }
+    .resume__education {
+      .education__title {
+        position: relative;
+        .side-title {
+          transform: translate(-62%, 200%) rotate(-90deg);
+        }
+      }
+      .resume__block {
+        border-left: none;
+        border-right: 1px solid $color-green-9;
+        &::before,
+        &::after {
+          position: absolute;
+          left: unset;
+          top: 0;
+          right: 0;
+          transform: none;
+          transform: translate(50%, -50%);
+        }
+        .block__content {
+          margin: 0 $mg-8 0 $mg-4;
+          .block__text {
+            ul {
+              li {
+                list-style: circle !important;
+                margin-left: $mg-4;
+                margin-bottom: $mg-2;
+                &.bachelor,
+                span {
+                  color: $color-green-8;
+                  font-weight: $fw-600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

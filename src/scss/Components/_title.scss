@@ -1,0 +1,14 @@
+.section__title {
+  font-size: 3.3rem;
+  text-align: center;
+  margin: 0 0 $mg-16;
+  color: $color-green-6;
+  font-weight: $fw-500;
+  & span:first-child {
+    border-bottom: 3px solid $color-red-1;
+    padding-bottom: $pd-1 - 2;
+  }
+  & span:last-child {
+    color: $color-red-1;
+  }
+}

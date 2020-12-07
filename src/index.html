@@ -45,7 +45,7 @@
                         <i class="icon-logo_q"></i>
                         <img src="./assets/img/SVG/logoQ_color.svg" alt="">
                     </a>
-                    <a href="#null" class="sidbar__toggle hide-on-large-only" id="sidebarToggler">
+                    <a href="#null" class="sidebar__toggle hide-on-large-only" id="sidebarToggler">
                         <div class="toggle-button">
                             <div class="bar bar-1"></div>
                             <div class="bar bar-2"></div>
@@ -54,9 +54,10 @@
                     </a>
                     <div class="header__sidebar hide-on-large-only" id="sidebar">
                         <ul class="sidebar__config" id="side-nav">
-                            <li class="active nav-item__sm"><a href="#!">Home</a></li>
+                            <li class="active nav-item__sm"><a href="#">Home</a></li>
                             <li class="nav-item__sm"><a href="#about">About</a></li>
-                            <li class="nav-item__sm"><a href="#!">Resume</a></li>
+                            <li class="nav-item__sm"><a href="#resume">Resume</a></li>
+                            <li class="nav-item__sm"><a href="#skills">Skills</a></li>
                             <li class="nav-item__sm"><a href="#!">Portfolio</a></li>
                             <li class="nav-item__sm"><a href="#!">Contact</a></li>
                         </ul>
@@ -64,26 +65,14 @@
                     <ul id="navbar__pages" class="right hide-on-med-and-down">
                         <li class="nav-item active"><a href="#">Home</a></li>
                         <li class="nav-item"><a href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-item" href="#!">Resume</a></li>
+                        <li class="nav-item"><a class="nav-item" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-item" href="#skills">Skills</a></li>
                         <li class="nav-item"><a href="#!">Portfolio</a></li>
                         <li class="nav-item"><a href="#!">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <!-- <div class="header__sidebar">
-            <ul class="sidebar__config" id="side-nav">
-                <a href="#!" class="brand-logo logo__config ">
-                    <i class="icon-logo_q"></i>
-                </a>
-                <li><a class="nav-item__sm" href="">Home</a></li>
-                <li><a class="nav-item__sm" href="">About</a></li>
-                <li><a class="nav-item__sm" href="">Resume</a></li>
-                <li><a class="nav-item__sm" href="">Portfolio</a></li>
-                <li><a class="nav-item__sm" href="">Contact</a></li>
-            </ul>
-        </div> -->
-
     </header>
 
     <!-- HOME -->
@@ -99,14 +88,10 @@
                             <span class="item">Vu The Quan</span>
                             <span class="item">a Front-end Developer</span>
                         </div>
-                        <p class="home__brief white-text">I'm passionate about learning new
+                        <p class="home__brief">I'm passionate about learning new
                             technologies and always
                             keep concentrated on improving my self skills. Being patient
-                            and responsible for working help me implement completely assinged tasks.</p>
-                        <!-- <p class="home__brief short white-text">I'm passionate about learning new
-                            technologies and always
-                            keep concentrated on improving my self skills. Being patient
-                            and responsible for working help me implement completely assinged tasks.</p> -->
+                            and responsible for working help me implement completely assigned tasks.</p>
                     </div>
                     <div class="home__about__cv">
                         <button class="btn btn-cv darken-4 waves-light waves-effect">
@@ -116,8 +101,10 @@
                     </div>
                 </div>
                 <div class="col s12 l7 home__img hide-on-med-and-down">
-                    <img class="potrait-1" src="./assets/img/potrait.png" alt="">
-                    <div class="circle__background"></div>
+                    <div class="home__img__block">
+                        <img class="potrait-1" src="./assets/img/potrait.png" alt="">
+                        <div class="circle__background"></div>
+                    </div>
                 </div>
             </div>
             <div class="home__social hide-on-small-and-down" id="mySocial">
@@ -178,7 +165,7 @@
     <section id="about">
         <div class="about__background"></div>
         <div class="about__container container">
-            <h1><span>About</span> <span>Me</span></h1>
+            <h1 class="section__title"><span>About</span> <span>Me</span></h1>
             <div class="row">
                 <div class="col s12 l6 about__img">
                     <div class="img__container">
@@ -254,7 +241,288 @@
 
     <!-- RESUME -->
     <section id="resume">
+        <div class="resume__container container">
+            <h1 class="section__title"><span>My</span> <span>Resume</span></h1>
+            <div class="row">
+                <div class="col s12 l6 resume__experience">
+                    <div class="row">
+                        <div class="col s1 m2 l3 experience__title col__config">
+                            <h3 class="side-title">EXPERIENCE</h3>
+                        </div>
+                        <div class="col s11 m10 l9 col__config">
+                            <div class="resume__block">
+                                <div class="block__content">
+                                    <h4>Nissan Automotive Technology Vietnam</h4>
+                                    <p class="block__time">
+                                        July 2019 - April 2020
+                                    </p>
+                                    <div class="block__text">
+                                        <ul>
+                                            <li class="engineer">
+                                                Electronics Design Engineer
+                                            </li>
+                                            <li>Designing and testing the wiring system of the
+                                                electronics system in cars</li>
+                                            <li>Working on multiple national projects, using English and Japanese
+                                                continuously</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume__block">
+                                <div class="block__content">
+                                    <h4>Personal Projects</h4>
+                                    <p class="block__time">
+                                        July 2020 - Present
+                                    </p>
+                                    <div class="block__text">
+                                        <ul>
+                                            <li>Learning and practicing with many Front-end projects</li>
+                                            <li>Working on my own projects with learned Front-end skills</li>
+                                        </ul>
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l6 resume__education">
+                    <div class="row">
+                        <div class="col s11 m10 l9 col__config">
+                            <div class="resume__block">
+                                <div class="block__content">
+                                    <h4>University of Engineering and Technology</h4>
+                                    <p class="block__time">
+                                        May 2015 - Jun 2019
+                                    </p>
+                                    <div class="block__text">
+                                        <ul>
+                                            <li class="bachelor">Bachelor of Mechatronics Engineering</li>
+                                            <li>Grade: Distinction</li>
+                                            <li>GPA: 3.42/4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume__block">
+                                <div class="block__content">
+                                    <h4>Cybersoft - Cyberlearn Programing Education Center</h4>
+                                    <p class="block__time">
+                                        July 2020 - Present
+                                    </p>
+                                    <div class="block__text">
+                                        <ul>
+                                            <li><span>Programming course</span>: thinking in programming,
+                                                problem-solving, Java
+                                                language, OOP</li>
+                                            <li><span>Front-end Foundation course</span>: basic knowledge of HTML5,
+                                                CSS3, Boostrap 4,
+                                                SASS/SCSS, Javascript (ES5/ES6), Jquery, AJAX,
+                                                Git, ...</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s1 m2 l3 education__title col__config">
+                            <h3 class="side-title">EDUCATION</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="skills__container container">
+            <h1 class="section__title"><span>My</span> <span>Skills</span></h1>
+            <div class="row">
+                <div class="col-s12">
+                    <ul class="hide-on-med-and-down skills__lg">
+                        <li>
+                            <span class="skills__unit">
+                                <i class="fa fa-circle"></i> HTML/CSS</span>
+                            <span class="skills__item delay-1">
+                                <img src="./assets/img/SVG/html5.svg" alt="skills-logo">
+                                <svg></svg>
+                            </span>
+                            <span class="skills__item delay-2">
+                                <img src="./assets/img/SVG/css-3.svg" alt="skills-logo">
+                            </span>
+                            <span class="skills__item delay-3">
+                                <img src="./assets/img/SVG/bootstrap-4.svg" alt="skills-logo">
+                            </span>
+                            <span class="skills__item delay-4">
+                                <img src="./assets/img/SVG/materialize.svg" alt="skills-logo">
+                            </span>
+                            <span class="skills__item delay-5">
+                                <img src="./assets/img/SVG/sass-1.svg" alt="skills-logo">
+                            </span>
+                            <span class="skills__item skills__text delay-6">
+                                Responsive
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skills__unit"><i class="fa fa-circle"></i> Javascript</span>
+                            <span class="skills__item skills__text delay-1">
+                                ES5/ES6
+                            </span>
+                            <span class="skills__item delay-2">
+                                <img src="./assets/img/SVG/jquery-1.svg" alt="skills-logo">
+                            </span>
+                            <span class="skills__item skills__text delay-3">
+                                AJAX
+                            </span>
+                            <span class="skills__item skills__text delay-4">
+                                RESTfull API
+                            </span>
+                            <span class="skills__item skills__text delay-5">
+                                AXIOS
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skills__unit"><i class="fa fa-circle"></i> Git</span>
+                            <span class="skills__item skills__text">
+                                Git basic
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skills__unit"><i class="fa fa-circle"></i> Knowledge base</span>
+                            <span class="skills__item skills__text delay-1">
+                                OOP
+                            </span>
+                            <span class="skills__item skills__text skills__item--long delay-2">
+                                Data Structure and Algorithms
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skills__unit"><i class="fa fa-circle"></i> Soft skills</span>
+                            <span class="skills__item skills__text delay-1">
+                                Teamwork
+                            </span>
+                            <span class="skills__item skills__text delay-2">
+                                Self study
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skills__unit"><i class="fa fa-circle"></i> Languages</span>
+                            <span class="skills__item skills__text skills__item--long delay-1">
+                                English 720 Toeic (11/2020)
+                            </span>
+                            <span class="skills__item skills__text skills__item--long delay-2">
+                                Japanese N4 (8/2019)
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="hide-on-large-only collapsible skills__md">
+                        <li>
+                            <div class="collapsible-header">
+                                <span class="skills__unit">
+                                    <i class="fa fa-circle"></i> HTML/CSS</span>
+                            </div>
+
+                            <div class="collapsible-body">
+                                <span class="skills__item delay-1">
+                                    <img src="./assets/img/SVG/html5.svg" alt="skills-logo">
+                                </span>
+                                <span class="skills__item delay-2 ">
+                                    <img src="./assets/img/SVG/css-3.svg" alt="skills-logo">
+                                </span>
+                                <span class="skills__item delay-3 ">
+                                    <img src="./assets/img/SVG/bootstrap-4.svg" alt="skills-logo">
+                                </span>
+                                <span class="skills__item delay-4 ">
+                                    <img src="./assets/img/SVG/materialize.svg" alt="skills-logo">
+                                </span>
+                                <span class="skills__item delay-5 ">
+                                    <img src="./assets/img/SVG/sass-1.svg" alt="skills-logo">
+                                </span>
+                                <span class="skills__item skills__text delay-6 ">
+                                    Responsive
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <span class="skills__unit"><i class="fa fa-circle"></i> Javascript</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="skills__item skills__text delay-1">
+                                    ES5/ES6
+                                </span>
+                                <span class="skills__item delay-2">
+                                    <img src="./assets/img/SVG/jquery-1.svg" alt="skills-logo">
+                                </span>
+                                <span class="skills__item skills__text delay-3">
+                                    AJAX
+                                </span>
+                                <span class="skills__item skills__text delay-4">
+                                    RESTfull API
+                                </span>
+                                <span class="skills__item skills__text delay-5">
+                                    AXIOS
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <span class="skills__unit"><i class="fa fa-circle"></i> Git</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="skills__item skills__text">
+                                    Git basic
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="skills__knowledge">
+                            <div class="collapsible-header">
+                                <span class="skills__unit"><i class="fa fa-circle"></i> Knowledge base</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="skills__item skills__text delay-1">
+                                    OOP
+                                </span>
+                                <span class="skills__item skills__text skills__item--long delay-2">
+                                    Data Structure and Algorithms
+                                </span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <span class="skills__unit"><i class="fa fa-circle"></i> Soft skills</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="skills__item skills__text delay-1">
+                                    Teamwork
+                                </span>
+                                <span class="skills__item skills__text delay-2">
+                                    Self study
+                                </span>
+                            </div>
+                        </li>
+                        <li class="skills__language">
+                            <div class="collapsible-header">
+                                <span class="skills__unit"><i class="fa fa-circle"></i> Languages</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <span class="skills__item skills__text skills__item--long delay-1">
+                                    English 720 Toeic (11/2020)
+                                </span>
+                                <span class="skills__item skills__text skills__item--long delay-2">
+                                    Japanese N4 (8/2019)
+                                </span>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- //////// END //////// -->
     <!-- MATERIALIZE JS -->

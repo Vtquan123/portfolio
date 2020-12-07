@@ -226,3 +226,48 @@
     }
   }
 }
+
+#resume {
+  @include responsive(1400px) {
+    .resume__container {
+      width: 85%;
+      .resume__experience {
+        .resume__block {
+          .block__content {
+            h4 {
+              font-size: $fs-html;
+            }
+          }
+        }
+      }
+      .resume__education {
+        .resume__block {
+          .block__content {
+            h4 {
+              font-size: $fs-html;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg-screen) {
+    .resume__container {
+      width: 85%;
+    }
+  }
+}
+
+#skills {
+  @include responsive($lg-screen) {
+    margin: 0 auto;
+    .skills__container {
+      width: 85%;
+      .skills__lg {
+        li {
+          margin: 0 0 $mg-8;
+        }
+      }
+    }
+  }
+}

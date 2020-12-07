@@ -1,6 +1,5 @@
 #home {
-  background: url("../assets/img/Background-3.jpg") no-repeat center;
-  background-size: cover;
+  background-color: $color-grey-3;
   padding: 0 $pd-16;
   overflow: hidden;
   height: 100vh;
@@ -14,7 +13,7 @@
       .home__about__content {
         padding-bottom: $pd-12;
         & > p:first-child {
-          color: $color-grey-3;
+          color: $color-green-5;
           font-size: $pd-4;
           font-weight: $fw-500;
           margin: 0;
@@ -23,25 +22,25 @@
         .home__name {
           height: 130px;
           h1 {
-            color: $color-grey-3;
+            color: $color-green-5;
             margin: $mg-8 0;
             font-weight: $fw-500;
             font-size: 4rem;
 
             #typingText {
-              background: linear-gradient(
-                to right,
-                rgba(255, 255, 255, 1),
-                #bfed7b
-              );
-              color: transparent;
+              // background: linear-gradient(
+              //   to right,
+              //   rgba(255, 255, 255, 1),
+              //   #bfed7b
+              // );
+              // color: transparent;
               position: relative;
-              -webkit-background-clip: text;
-              -moz-background-clip: text;
-              -ms-background-clip: text;
-              -o-background-clip: text;
-              overflow: hidden;
-              //   animation: typing 3.5s 2s infinite alternate steps(30, end);
+              // -webkit-background-clip: text;
+              // -moz-background-clip: text;
+              // -ms-background-clip: text;
+              // -o-background-clip: text;
+              // overflow: hidden;
+              // //   animation: typing 3.5s 2s infinite alternate steps(30, end);
               &::after {
                 content: "";
                 height: 70px;
@@ -49,7 +48,7 @@
                 position: absolute;
                 bottom: 10px;
                 right: 0;
-                background-color: rgba(255, 255, 255, 0.7);
+                background-color: $color-green-5;
                 animation: blink 0.5s infinite ease alternate;
               }
             }
@@ -61,7 +60,7 @@
         .home__brief {
           font-size: $fs-html - 2;
           font-weight: $fw-300;
-          color: $color-grey-3;
+          color: $color-green-8;
           letter-spacing: 1px;
           padding: $pd-10 0;
           padding-right: $pd-14;
@@ -109,13 +108,7 @@
         top: 12%;
         transform: translateX(-50%);
         overflow: hidden;
-        background: linear-gradient(
-          45deg,
-          rgba(255, 255, 255, 0.2) 50%,
-          $color-green-2,
-          transparent
-        );
-        // background-color: rgba(255, 255, 255, 0.15);
+        background-color: $color-green-7;
         backdrop-filter: blur(3px);
         box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.05);
       }
@@ -137,12 +130,13 @@
           height: 40px;
           width: 40px;
           border-radius: 50%;
+          border: 1px solid $color-green-5;
           background-color: $color-grey-3;
           text-align: center;
           transition: all 0.3s;
           i {
             font-size: $fs-2;
-            line-height: 40px;
+            line-height: 38px;
           }
         }
         ul {
@@ -184,24 +178,32 @@
               }
               &.facebook:hover {
                 background-color: #0b84ee;
+                border-color: #0b84ee;
+
                 i {
                   color: $color-white;
                 }
               }
               &.git:hover {
                 background-color: #24292e;
+                border-color: #24292e;
+
                 i {
                   color: $color-white;
                 }
               }
               &.instagram:hover {
                 background-color: #ed4956;
+                border-color: #ed4956;
+
                 i {
                   color: $color-white;
                 }
               }
               &.codepen:hover {
                 background-color: #1e1f26;
+                border-color: #1e1f26;
+
                 i {
                   color: $color-white;
                 }
@@ -230,6 +232,7 @@
           width: 50px;
           z-index: 1;
           background-color: $color-red-3;
+          border-color: $color-red-3;
           box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
           position: relative;
           i {
@@ -256,7 +259,7 @@
     .home__see-more {
       height: 45px;
       width: 27px;
-      border: 1px solid $color-white;
+      border: 1px solid $color-green-5;
       border-radius: 25px;
       position: absolute;
       left: 50%;
@@ -283,7 +286,7 @@
         width: 1px;
         z-index: 0;
         border-radius: 50%;
-        background-color: $color-white;
+        background-color: $color-green-5;
         position: absolute;
         top: 10%;
         left: 50%;

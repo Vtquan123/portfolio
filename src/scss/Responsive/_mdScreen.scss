@@ -1,6 +1,6 @@
 #header {
   @include responsive($md-screen) {
-    padding: $pd-4 $pd-8 0;
+    padding: 0 $pd-8;
     .header__navbar {
       .navbar__config {
         position: relative;
@@ -10,9 +10,14 @@
           transform: none;
           position: absolute;
         }
-        .sidbar__toggle {
+        .sidebar__toggle {
           right: 0;
           position: absolute;
+          .toggle-button {
+            .bar {
+              background-color: $color-green-5;
+            }
+          }
         }
         .header__sidebar {
           position: absolute;
@@ -85,7 +90,7 @@
       .home__about {
         .home__about__content {
           .home__name {
-            height: 70px;
+            height: 90px;
             h1 {
             }
           }
@@ -194,6 +199,142 @@
             a {
               margin-right: $mg-5;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+#resume {
+  @include responsive($md-screen) {
+    .resume__container {
+      .section__title {
+        font-size: $fs-12 - 0.2;
+        margin-bottom: $mg-14;
+      }
+      .resume__experience {
+        @media screen and (min-width: 601px) {
+          .row {
+            margin: 0 $mg-8 0 0;
+          }
+        }
+        .experience__title {
+          .side-title {
+            font-size: $fs-11;
+            transform: translate(-40%, 210%) rotate(-90deg);
+            @media screen and (min-width: 801px) {
+              transform: translate(-35%, 210%) rotate(-90deg);
+            }
+          }
+        }
+        .resume__block {
+          &:last-child {
+            padding-bottom: $pd-8 !important;
+          }
+          .block__content {
+            margin: 0 0 0 $mg-8;
+            @media screen and (min-width: 801px) {
+              margin: 0 0 0 $mg-10;
+            }
+          }
+        }
+      }
+      .resume__education {
+        @media screen and (min-width: 601px) {
+          .row {
+            margin: 0 0 0 $mg-8;
+          }
+        }
+        .education__title {
+          .side-title {
+            font-size: $fs-11;
+            transform: translate(-60%, 195%) rotate(-90deg);
+            @media screen and (min-width: 801px) {
+              transform: translate(-65%, 195%) rotate(-90deg);
+            }
+          }
+        }
+        .resume__block {
+          &:last-child {
+            padding-bottom: $pd-8 !important;
+          }
+          .block__content {
+            margin: 0 $mg-8 0 0;
+            @media screen and (min-width: 801px) {
+              margin: 0 $mg-10 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#skills {
+  @include responsive($md-screen) {
+    .skills__container {
+      h1 {
+        font-size: $fs-11;
+        margin-bottom: $mg-10;
+      }
+      .skills__md {
+        height: unset;
+        border: none;
+        box-shadow: none;
+        li {
+          display: block;
+          padding: 0;
+          margin-bottom: $mg-4;
+          .collapsible-header {
+            background-color: transparent;
+            border: none;
+            .skills__unit {
+              font-size: $fs-html;
+              margin: 0;
+            }
+          }
+          .collapsible-body {
+            text-align: center;
+            border: none;
+            padding: $pd-2;
+            display: none !important;
+            .skills__item {
+              margin: 0 auto;
+              margin-bottom: $mg-3;
+              width: 30%;
+              height: 45px;
+              img {
+                width: 80px;
+              }
+            }
+          }
+          &.active {
+            .collapsible-body {
+              display: flex !important;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              .skills__text {
+                font-size: $fs-1;
+                line-height: 41px;
+              }
+            }
+          }
+
+          &.skills__knowledge,
+          &.skills__language {
+            .collapsible-body {
+              .skills__item {
+                width: 45%;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          li {
+            filter: blur(0);
+            transform: none;
           }
         }
       }
