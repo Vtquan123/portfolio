@@ -1,6 +1,6 @@
 #header {
   padding: 0 $pd-14;
-  margin-top: 0;
+  margin-top: $mg-2;
   background-color: transparent;
   position: fixed;
   display: block;
@@ -48,26 +48,26 @@
             &:hover {
               background-color: transparent;
             }
-          }
-          &::after {
-            content: "";
-            width: 0;
-            height: 2px;
-            background-color: $color-green-5;
-            transition: all 0.3s;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            bottom: 15px;
-          }
-          &.active {
-            background-color: transparent;
             &::after {
-              width: 70%;
+              content: "";
+              width: 0;
+              height: 2px;
+              // background-color: transparent;
+              background-color: $color-green-7;
+              transition: all 0.3s;
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              bottom: 15px;
+            }
+            &.active {
+              &::after {
+                width: 70%;
+              }
             }
           }
           &:hover {
-            &::after {
+            a::after {
               width: 70%;
             }
           }

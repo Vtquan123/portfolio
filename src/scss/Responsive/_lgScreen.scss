@@ -271,3 +271,32 @@
     }
   }
 }
+
+#footer {
+  @include responsive($lg-screen) {
+    .footer__form {
+      .footer__container {
+        .footer__info {
+          ul {
+            li {
+              p {
+                font-size: $fs-html;
+                margin-bottom: $mg-2;
+              }
+              span {
+                width: 100px;
+                font-size: $fs-1 + 2;
+                i {
+                  font-size: $fs-1 + 2;
+                }
+              }
+              a {
+                font-size: $fs-1 + 2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

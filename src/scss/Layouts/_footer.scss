@@ -1,0 +1,114 @@
+#footer {
+  .footer__form {
+    padding: $pd-16 $pd-12;
+    background-color: $color-green-12;
+    .footer__container {
+      h1 {
+        text-align: left;
+        margin-bottom: $mg-6;
+        color: $color-grey-3;
+      }
+      p {
+        @include text($fs-html, $fw-300, $color-grey-3);
+        margin-bottom: $mg-12;
+      }
+      .footer__info {
+        ul {
+          margin: 0;
+          li {
+            margin-bottom: $mg-2;
+            p {
+              @include text($fs-3, $fw-normal, $color-red-1);
+              margin: 0 0 $mg-6;
+            }
+            span {
+              color: $color-grey-3;
+              display: inline-block;
+              width: 115px;
+              margin-right: $mg-1;
+              i {
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                font-size: $fs-2;
+                text-align: center;
+                color: $color-red-1;
+              }
+            }
+            a {
+              color: $color-red-1;
+            }
+          }
+        }
+      }
+      .footer__send {
+        form {
+          .form-group {
+            position: relative;
+            margin-bottom: $mg-4;
+            input {
+              border: 2px solid $color-grey-3;
+              border-radius: 10px;
+              outline: none;
+              box-sizing: border-box;
+              @include text($fs-html - 1, $fw-300, $color-grey-3);
+              padding: 0 $pd-2;
+              &:focus {
+                border-color: $color-red-1;
+              }
+              &:focus + label {
+                top: 0;
+              }
+            }
+            label {
+              @include text($fs-html - 1, $fw-300, $color-grey-3);
+              padding: 0 $pd-1;
+              background-color: $color-green-12;
+              position: absolute;
+              top: 25px;
+              left: 10px;
+              transform: translateY(-50%);
+              transition: all 0.3s;
+              sup {
+                color: $color-red-1;
+              }
+            }
+            textarea {
+              @include text($fs-html - 1, $fw-300, $color-grey-3);
+              padding: $pd-5 $pd-2;
+              border: 2px solid $color-grey-3;
+              border-radius: 10px;
+              height: 150px;
+              width: 100%;
+              resize: none;
+              outline: none;
+              &:focus {
+                border-color: $color-red-1;
+              }
+              &:focus + label {
+                top: 0;
+              }
+            }
+            span {
+              @include text($fs-html - 2, $fw-300, $color-red-1);
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer__copyright {
+    text-align: center;
+    position: relative;
+    padding: $pd-4 $pd-14;
+    background-color: $color-green-13;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      text-align: center;
+      @include text($fs-html, $fw-300, $color-grey-3);
+    }
+  }
+}

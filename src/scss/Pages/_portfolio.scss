@@ -1,0 +1,99 @@
+#portfolio {
+  padding: $pd-16 0 $pd-14;
+  background-color: $color-grey-3;
+  position: relative;
+  .portfolio__container {
+    .swiper-container {
+      height: 500px;
+    }
+    #project1 {
+      background: url("../assets/img/honda-lg.jpg") no-repeat center;
+      background-size: cover;
+    }
+    #project2 {
+      background: url("../assets/img/weather-site.jpg") no-repeat center;
+      background-size: cover;
+    }
+    #project3 {
+      background: url("../assets/img/portfolio.jpg") no-repeat center;
+      background-size: cover;
+    }
+    .project {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      .project__img {
+        border: 2px solid $color-green-5;
+        border-radius: 20px;
+        width: 60%;
+        height: 320px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2.8px 2.3px -34px rgba(0, 49, 52, 0.206),
+          0 9.4px 7.8px -34px rgba(0, 49, 52, 0.304),
+          0 42px 35px -34px rgba(0, 49, 52, 0.51);
+        &:hover {
+          a {
+            transform: translateX(0);
+          }
+        }
+      }
+      .project__detail {
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+        width: 40%;
+        padding: $pd-4;
+        border: 2px solid $color-green-5;
+        background-color: $color-white;
+        border-radius: 20px;
+        box-shadow: 0 2.8px 2.3px -34px rgba(0, 49, 52, 0.206),
+          0 9.4px 7.8px -34px rgba(0, 49, 52, 0.304),
+          0 42px 35px -34px rgba(0, 49, 52, 0.51);
+        h4 {
+          @include text($fs-2 - 2, $fw-600, $color-green-8);
+          margin: 0;
+          line-height: 1.2;
+        }
+        p {
+          @include text($fs-1 + 2, $fw-500, $color-green-4);
+          margin: $mg-2 0;
+        }
+        ul {
+          margin: $mg-2 0;
+          li {
+            list-style: circle;
+            margin-left: $mg-4;
+            @include text($fs-1, $fw-500, $color-green-5);
+            .detail__title {
+              color: $color-green-8;
+            }
+          }
+        }
+      }
+      .project__link {
+        display: flex;
+        justify-content: left;
+      }
+    }
+    .navigation {
+      transform: translateY(-50%);
+      color: $color-green-5;
+      outline: none;
+    }
+    //swiper-pagination-bullet-active
+    .pagination__config {
+      outline: none;
+      .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        background-color: $color-green-5;
+        margin: 0 $mg-3;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $color-green-5;
+      opacity: 1;
+    }
+  }
+}

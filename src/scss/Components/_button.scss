@@ -68,3 +68,84 @@
     background-color: $color-red-3;
   }
 }
+
+.btn-project {
+  height: 30px;
+  padding: 0 $pd-2;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  background-color: $color-red-3;
+  border-radius: 5px;
+  a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: $fs-1;
+    text-transform: capitalize;
+  }
+  &:hover {
+    box-shadow: none;
+    background-color: $color-red-4;
+  }
+  &:focus {
+    background-color: $color-red-3;
+  }
+}
+.btn-demo {
+  height: 30px;
+  padding: 0 $pd-2;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  background-color: $color-green-5;
+  border-radius: 5px;
+  margin-left: $mg-2;
+  a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: $fs-1;
+    text-transform: capitalize;
+  }
+  &:hover {
+    box-shadow: none;
+    background-color: $color-green-11;
+  }
+  &:focus {
+    background-color: $color-green-5;
+  }
+}
+
+.btn-submit {
+  box-shadow: none;
+  background-color: $color-red-3;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: $fs-html;
+  color: $color-white;
+  &:hover {
+    box-shadow: none;
+    background-color: $color-red-4;
+  }
+  &:focus {
+    background-color: $color-red-3;
+  }
+}
+
+.btn-back-to-top {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $color-red-1;
+  transition: all 0.3s;
+  i {
+    color: $color-white;
+    font-size: $fs-2;
+    line-height: 40px;
+  }
+  &:hover {
+    background-color: $color-red-4;
+  }
+}

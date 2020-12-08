@@ -221,8 +221,11 @@
   @include responsive($sm-screen) {
     .resume__container {
       .section__title {
-        font-size: $fs-11;
+        font-size: $fs-11 + 0.5;
         margin-bottom: $mg-10;
+        @media screen and (max-width: 424px) {
+          font-size: $fs-11;
+        }
       }
       .resume__experience {
         .experience__title {
@@ -266,6 +269,10 @@
   }
   @include responsive(374px) {
     .resume__container {
+      .section__title {
+        font-size: $fs-11;
+        margin-bottom: $mg-10;
+      }
       .resume__experience {
         .row .col__config {
           padding: 0.25rem;
@@ -313,6 +320,12 @@
 #skills {
   @include responsive($sm-screen) {
     .skills__container {
+      .section__title {
+        font-size: $fs-11 + 0.5;
+        @media screen and (max-width: 424px) {
+          font-size: $fs-11;
+        }
+      }
       .skills__md {
         li {
           margin: 0 $mg-1 $mg-4;
@@ -354,6 +367,151 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+#portfolio {
+  @include responsive($sm-screen) {
+    .portfolio__container {
+      .swiper-container {
+        height: 470px;
+      }
+      h1 {
+        @media screen and (max-width: 425px) {
+          font-size: $fs-11;
+        }
+        font-size: $fs-11 + 0.5;
+        margin-bottom: $mg-10;
+      }
+      #project1 {
+        background: url("../assets/img/honda-sm.jpg") no-repeat center top;
+        background-size: cover;
+      }
+      #project2 {
+        background: url("../assets/img/weather-site-sm-light.jpg") no-repeat
+          center top;
+        background-size: cover;
+      }
+      #project3 {
+        background: url("../assets/img/portfolio-sm.jpg") no-repeat center top;
+        background-size: cover;
+      }
+      .project {
+        .project__img {
+          width: 75%;
+        }
+        .project__detail {
+          width: 60%;
+          bottom: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: $pd-2;
+          h4 {
+            font-size: $fs-1 + 2;
+          }
+          p {
+            font-size: $fs-1;
+          }
+          .project__link {
+            justify-content: center;
+            button {
+              padding: 0 $pd-2 - 2;
+              height: 28px;
+              a {
+                font-size: $fs-1 - 2;
+              }
+            }
+            .btn-demo {
+              margin-left: $mg-1;
+            }
+          }
+        }
+      }
+      .pagination__config {
+        bottom: 0;
+      }
+      @media screen and (max-width: 375px) {
+        .next__config {
+          right: 0;
+        }
+        .prev__config {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  @include responsive($sm-screen) {
+    .footer__form {
+      padding: $pd-12 0;
+      .footer__container {
+        h1 {
+          @media screen and (max-width: 425px) {
+            font-size: $fs-11 - 0.2;
+          }
+          font-size: $fs-11 + 0.5;
+        }
+        p {
+          font-size: $fs-1 + 1;
+          margin-bottom: $mg-6;
+        }
+        .footer__info {
+          margin-bottom: $mg-4;
+          padding: 0;
+          ul {
+            li {
+              p {
+                font-size: $fs-html;
+                margin-bottom: $mg-2;
+              }
+              span {
+                width: 100px;
+                font-size: $fs-1;
+                i {
+                  font-size: $fs-1 + 2;
+                }
+              }
+              a {
+                font-size: $fs-1;
+              }
+            }
+          }
+        }
+        .footer__send {
+          form {
+            .form-group {
+              input {
+                font-size: $fs-1;
+              }
+              label {
+                font-size: $fs-1;
+              }
+              textarea {
+                font-size: $fs-1;
+              }
+            }
+            .btn-submit {
+              font-size: $fs-1;
+            }
+          }
+        }
+      }
+    }
+    .footer__copyright {
+      display: block;
+      padding: $pd-4 0;
+      p {
+        font-size: $fs-1;
+      }
+      .btn-back-to-top {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }

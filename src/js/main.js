@@ -9,24 +9,6 @@ getElementByID("sidebarToggler").onclick = () => {
   getElementByID("sidebar").classList.toggle("active");
 };
 
-document.querySelectorAll(".nav-item").forEach((element) => {
-  element.onclick = () => {
-    document.querySelectorAll(".nav-item").forEach((item) => {
-      item.classList.remove("active");
-    });
-    element.classList.add("active");
-  };
-});
-
-queryElementAll(".nav-item__sm").forEach((element) => {
-  element.onclick = () => {
-    queryElementAll(".nav-item__sm").forEach((item) => {
-      item.classList.remove("active");
-    });
-    element.classList.add("active");
-  };
-});
-
 queryElement(".social__menu").onclick = () => {
   getElementByID("social__link").classList.toggle("show");
 };
@@ -70,6 +52,35 @@ window.onscroll = () => {
     getElementByID("social__link").classList.add("show");
   }
 };
+queryElementAll(".project").forEach((element) => {
+  element.onclick = () => {
+    element.classList.add("active");
+  };
+});
+
+queryElementAll("input").forEach((item) => {
+  item.onchange = () => {
+    if (item.value === "") {
+      item.nextElementSibling.style.top = "25px";
+    } else {
+      item.nextElementSibling.style.top = "0";
+    }
+  };
+  item.onsubmit = () => {
+    item.reset();
+  };
+});
+
+getElementByID("message").onchange = () => {
+  if (getElementByID("message").value === "") {
+    getElementByID("message").nextElementSibling.style.top = "25px";
+  } else {
+    getElementByID("message").nextElementSibling.style.top = "0";
+  }
+};
+getElementByID("message").onsubmit = () => {
+  getElementByID("message").reset();
+};
 
 /* Typing effect */
 let wrapper;
@@ -112,3 +123,17 @@ const erase = async () => {
 };
 
 writeAll("item", "typingText");
+
+/* Swiper */
+var swiper = new Swiper(".swiper-container", {
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

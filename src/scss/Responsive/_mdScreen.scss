@@ -37,26 +37,31 @@
           }
           ul {
             padding: $pd-4 0;
-            box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.3);
             position: relative;
             overflow: hidden;
             border-radius: 10px;
             li {
               float: none;
               text-align: center;
-              &:hover {
-                &::after {
-                  width: unset;
-                }
-              }
-              &.active {
-                &::after {
-                  width: 35%;
-                }
-              }
               a {
+                color: $color-grey-3;
                 &:active {
-                  color: $color-blue-1;
+                  color: $color-red-1;
+                }
+                &::after {
+                  bottom: 5px;
+                  background-color: $color-grey-3;
+                }
+                &:hover {
+                  &::after {
+                    width: unset;
+                  }
+                }
+                &.active {
+                  &::after {
+                    width: 35%;
+                  }
                 }
               }
             }
@@ -68,12 +73,7 @@
               top: 0;
               left: 0;
               box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.25);
-              background: linear-gradient(
-                40deg,
-                $color-green-1,
-                $color-green-2 60%
-              );
-              // background-color: #59d6d5;
+              background-color: $color-green-12;
               z-index: 0;
             }
           }
@@ -282,6 +282,9 @@
         height: unset;
         border: none;
         box-shadow: none;
+        &::before {
+          display: none;
+        }
         li {
           display: block;
           padding: 0;
@@ -335,6 +338,63 @@
           li {
             filter: blur(0);
             transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  @include responsive($md-screen) {
+    .footer__form {
+      padding: $pd-12 0;
+      .footer__container {
+        h1 {
+          font-size: $fs-11 + 0.5;
+        }
+        p {
+          font-size: $fs-1 + 1;
+          margin-bottom: $mg-6;
+        }
+        .footer__info {
+          margin-bottom: $mg-4;
+          padding: 0;
+          ul {
+            li {
+              p {
+                font-size: $fs-html;
+                margin-bottom: $mg-2;
+              }
+              span {
+                width: 100px;
+                font-size: $fs-1;
+                i {
+                  font-size: $fs-1 + 2;
+                }
+              }
+              a {
+                font-size: $fs-1;
+              }
+            }
+          }
+        }
+        .footer__send {
+          form {
+            .form-group {
+              input {
+                font-size: $fs-1;
+              }
+              label {
+                font-size: $fs-1;
+              }
+              textarea {
+                font-size: $fs-1;
+              }
+            }
+            .btn-submit {
+              font-size: $fs-1;
+            }
           }
         }
       }
