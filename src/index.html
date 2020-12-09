@@ -436,7 +436,7 @@
                         </li>
                     </ul>
                     <ul class="hide-on-large-only collapsible skills__md">
-                        <li>
+                        <li class="animate__animated animate__fadeInRight delay-2 wow">
                             <div class="collapsible-header">
                                 <span class="skills__unit">
                                     <i class="fa fa-circle"></i> HTML/CSS</span>
@@ -463,7 +463,7 @@
                                 </span>
                             </div>
                         </li>
-                        <li>
+                        <li class="animate__animated animate__fadeInRight delay-4 wow">
                             <div class="collapsible-header">
                                 <span class="skills__unit"><i class="fa fa-circle"></i> Javascript</span>
                             </div>
@@ -485,7 +485,7 @@
                                 </span>
                             </div>
                         </li>
-                        <li>
+                        <li class="animate__animated animate__fadeInRight delay-6 wow">
                             <div class="collapsible-header">
                                 <span class="skills__unit"><i class="fa fa-circle"></i> Git</span>
                             </div>
@@ -496,7 +496,7 @@
                             </div>
 
                         </li>
-                        <li class="skills__knowledge">
+                        <li class="skills__knowledge animate__animated animate__fadeInRight delay-8 wow">
                             <div class="collapsible-header">
                                 <span class="skills__unit"><i class="fa fa-circle"></i> Knowledge base</span>
                             </div>
@@ -510,7 +510,7 @@
                             </div>
 
                         </li>
-                        <li>
+                        <li class="animate__animated animate__fadeInRight delay-10 wow">
                             <div class="collapsible-header">
                                 <span class="skills__unit"><i class="fa fa-circle"></i> Soft skills</span>
                             </div>
@@ -523,7 +523,7 @@
                                 </span>
                             </div>
                         </li>
-                        <li class="skills__language">
+                        <li class="skills__language animate__animated animate__fadeInRight delay-12 wow">
                             <div class="collapsible-header">
                                 <span class="skills__unit"><i class="fa fa-circle"></i> Languages</span>
                             </div>
@@ -582,10 +582,10 @@
                 </div> -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide project">
-                            <div class="project__img animate__animated animate__fadeInLeft delay-5 wow" id="project1">
+                        <div class="swiper-slide project  animate__animated animate__fadeInUp delay-5 wow">
+                            <div class="project__img" id="project1">
                             </div>
-                            <div class="project__detail animate__animated animate__fadeInRight delay-5 wow">
+                            <div class="project__detail">
                                 <h4>Honda Homepage</h4>
                                 <p>
                                     Oct 2020 - Nov 2020
@@ -711,7 +711,7 @@
                     Please feel free to send me some messages, hope that
                     we
                     can have a chance to work together.</p>
-                <div class="row  animate__animated animate__fadeInUp delay-10 wow">
+                <div class="row  animate__animated animate__fadeInUp delay-7 wow">
                     <div class="col s12 m6 l6 footer__info">
                         <ul>
                             <li>
@@ -744,27 +744,27 @@
                     <div class="col s12 m6 l6 footer__send">
                         <form action="">
                             <div class="form-group">
-                                <input type="text" id="name" required>
+                                <input type="text" id="name" name="Name" required>
                                 <label for="name" class="form__input">Full name<sup>*</sup>
                                 </label>
-                                <span class="error">Email required</span>
+                                <span id="name__error">Name required</span>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="email" required>
+                                <input type="text" id="email" name="Email" required>
                                 <label for="email" class="form__input">Email<sup>*</sup>
                                 </label>
-                                <span class="error">Email required</span>
+                                <span id="email__error">Email required</span>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="subject" required>
+                                <input type="text" id="subject">
                                 <label for="subject" class="form__input">Subject
                                 </label>
                             </div>
                             <div class="form-group">
-                                <textarea id="message" cols="50" rows="10"></textarea>
+                                <textarea id="message" name="Message" cols="50" rows="10"></textarea>
                                 <label for="message" class="form__input">Message<sup>*</sup>
                                 </label>
-                                <span class="error">Message required</span>
+                                <span id="message__error">Message required</span>
                             </div>
                             <button type="submit" class="btn btn-submit  waves-effect waves-light" id="send">Send
                                 Message</button>
