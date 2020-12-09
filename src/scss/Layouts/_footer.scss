@@ -11,6 +11,7 @@
       p {
         @include text($fs-html, $fw-300, $color-grey-3);
         margin-bottom: $mg-12;
+        letter-spacing: 1px;
       }
       .footer__info {
         ul {

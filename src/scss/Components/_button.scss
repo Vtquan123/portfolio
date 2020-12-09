@@ -29,15 +29,20 @@
 
 .btn-cv {
   line-height: 1;
-  display: flex;
-  align-items: center;
   box-shadow: none;
   background-color: $color-red-3;
   border-radius: 30px;
   animation: upDown 1s infinite ease alternate;
-  i {
-    line-height: 1;
-    margin-right: $mg-1;
+  a {
+    color: $color-grey-3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    i {
+      line-height: 1;
+      margin-right: $mg-1;
+    }
   }
   &:hover {
     box-shadow: none;

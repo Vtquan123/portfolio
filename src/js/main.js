@@ -1,3 +1,5 @@
+new WOW().init();
+
 const getElementByID = (id) => document.getElementById(id);
 const queryElement = (element) => document.querySelector(element);
 const queryElementAll = (element) => document.querySelectorAll(element);

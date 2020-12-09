@@ -28,19 +28,7 @@
             font-size: 4rem;
 
             #typingText {
-              // background: linear-gradient(
-              //   to right,
-              //   rgba(255, 255, 255, 1),
-              //   #bfed7b
-              // );
-              // color: transparent;
               position: relative;
-              // -webkit-background-clip: text;
-              // -moz-background-clip: text;
-              // -ms-background-clip: text;
-              // -o-background-clip: text;
-              // overflow: hidden;
-              // //   animation: typing 3.5s 2s infinite alternate steps(30, end);
               &::after {
                 content: "";
                 height: 70px;
@@ -264,7 +252,7 @@
       position: absolute;
       left: 50%;
       bottom: 3%;
-      transform: translateX(-50%);
+      transform: translateX(-50%) scale(1.005);
       transition: all 0.3s;
       &:hover {
         transform: translateX(-50%) scale(1.1);

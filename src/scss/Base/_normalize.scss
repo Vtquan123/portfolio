@@ -1,3 +1,107 @@
 .section.scrollspy {
   padding: 0;
 }
+
+/* Animate configuration */
+.animate__cubic {
+  animation-timing-function: cubic-bezier(0, 1.12, 1, 1.095);
+}
+#home {
+  .animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -30%, 0);
+      transform: translate3d(0, -30%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 20%, 0);
+      transform: translate3d(0, 20%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 20%, 0);
+      transform: translate3d(0, 20%, 0);
+    }
+  }
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -30%, 0);
+      transform: translate3d(0, -30%, 0);
+    }
+  }
+  @keyframes fadeOutRight {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(20%, 0, 0);
+      transform: translate3d(20%, 0, 0);
+    }
+  }
+}
+
+.animate__fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+#portfolio {
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-30%, 0, 0);
+      transform: translate3d(-30%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(30%, 0, 0);
+      transform: translate3d(30%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
