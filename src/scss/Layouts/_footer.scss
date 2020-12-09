@@ -56,6 +56,7 @@
               padding: 0 $pd-2;
               &:focus {
                 border-color: $color-red-1;
+                box-shadow: none;
               }
               &:focus + label {
                 top: 0;

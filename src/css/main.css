@@ -847,6 +847,7 @@ body {
 
 #footer .footer__form .footer__container .footer__send form .form-group input:focus {
   border-color: #ff6b6b;
+  box-shadow: none;
 }
 
 #footer .footer__form .footer__container .footer__send form .form-group input:focus + label {
