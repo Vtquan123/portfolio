@@ -1,0 +1,134 @@
+.preloading {
+  overflow: hidden;
+}
+
+.preload__container {
+  width: 100%;
+  height: 100%;
+  background-color: $color-grey-3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  overflow: hidden;
+  #logoQ {
+    width: 50%;
+    height: 150px;
+    #Layer_2 {
+      position: relative;
+      #circle_line_upside {
+        transform-origin: center center;
+        transform-box: fill-box;
+        transform: scale(0) rotate(-360deg);
+        -webkit-transform-origin: center center;
+        -webkit-transform-box: fill-box;
+        -webkit-transform: scale(0) rotate(-360deg);
+        -ms-transform-origin: center center;
+        -ms-transform-box: fill-box;
+        -ms-transform: scale(0) rotate(-360deg);
+        -moz-transform-origin: center center;
+        -moz-transform-box: fill-box;
+        -moz-transform: scale(0) rotate(-360deg);
+        -o-transform-origin: center center;
+        -o-transform-box: fill-box;
+        -o-transform: scale(0) rotate(-360deg);
+        opacity: 0;
+      }
+      #bar {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: scale(0.00001);
+        -webkit-transform-box: fill-box;
+        -webkit-transform-origin: center;
+        -webkit-transform: scale(0.00001);
+        -ms-transform-box: fill-box;
+        -ms-transform-origin: center;
+        -ms-transform: scale(0.00001);
+        -moz-transform-box: fill-box;
+        -moz-transform-origin: center;
+        -moz-transform: scale(0.00001);
+        -o-transform-box: fill-box;
+        -o-transform-origin: center;
+        -o-transform: scale(0.00001);
+        #rect {
+          height: 34.09px;
+          y: 129.03px;
+        }
+      }
+      #circle {
+        transform-origin: center center;
+        transform-box: fill-box;
+        transform: scale(0);
+        -webkit-transform-origin: center center;
+        -webkit-transform-box: fill-box;
+        -webkit-transform: scale(0);
+        -ms-transform-origin: center center;
+        -ms-transform-box: fill-box;
+        -ms-transform: scale(0);
+        -o-transform-origin: center center;
+        -o-transform-box: fill-box;
+        -o-transform: scale(0);
+        circle {
+          cy: 110.06px;
+          cx: 110.06px;
+        }
+      }
+      #circle_line_upside {
+        animation: rotate 1.75s cubic-bezier(0.695, 0.51, 0.39, 1.15) forwards;
+      }
+      #circle {
+        animation: zoom 0.3s 2s both cubic-bezier(0.82, 0.36, 0.28, 1.58);
+        circle {
+          animation: circleGoBack 0.4s 2.5s forwards
+            cubic-bezier(0.9, 0.3, 0.28, 1.3);
+        }
+      }
+      #bar {
+        animation: zoom 0.3s 2s forwards cubic-bezier(0.82, 0.36, 0.28, 1.58);
+        #rect {
+          animation: expandDot 0.4s 2.5s forwards
+            cubic-bezier(0.9, 0.3, 0.28, 1.3);
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(3turn);
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes expandDot {
+  0% {
+  }
+  100% {
+    y: 86.03px;
+    height: 77.87px;
+  }
+}
+@keyframes circleGoBack {
+  0% {
+  }
+  100% {
+    cy: 79.06px;
+    cx: 79.06px;
+    fill: #ff6b6b;
+  }
+}

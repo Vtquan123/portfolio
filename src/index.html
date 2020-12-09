@@ -37,7 +37,25 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="preloading">
+    <div id="preload" class="preload__container animate__animated">
+        <svg id="logoQ" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 250 250">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="circle_line_upside" data-name="circle_line_upside">
+                    <path
+                        d="M158.09,79.06c0-.5,0-1,0-1.5A79.06,79.06,0,1,0,77.56,158.1c.5,0,1,0,1.5,0v0a17,17,0,0,0,0-34.09h0q-1.17,0-2.34-.06A45,45,0,1,1,124,76.72q.06,1.17.06,2.34h0a17,17,0,0,0,34.09,0Z"
+                        fill="#517577" />
+                </g>
+                <g id="bar" data-name="bar copy">
+                    <rect id="rect" x="107.92" y="86.03" width="34.09" height="77.87" rx="17.05"
+                        transform="translate(301.7 124.97) rotate(135)" fill="#517577" />
+                </g>
+                <g id="circle" data-name="circle copy">
+                    <circle cx="79.06" cy="79.06" r="16.73" fill="#f26b6c" />
+                </g>
+            </g>
+        </svg>
+    </div>
     <!-- //////// START /////// -->
     <!-- HEADER -->
     <header id="header" class="section scrollspy">
@@ -84,20 +102,21 @@
             <div class="row">
                 <div class="col s12 l5 home__about">
                     <div class="home__about__content">
-                        <p class="animate__animated animate__fadeInLeft delay-3">Welcome!</p>
-                        <div class="home__name animate__animated animate__fadeInLeft delay-5">
+                        <p class="animate__animated animate__fadeInLeft wow" data-wow-delay="4s">Welcome!</p>
+                        <div class="home__name animate__animated animate__fadeInLeft wow" data-wow-delay="4.2s">
                             <h1 id="typing">I'm <span id="typingText"></span>
                             </h1>
                             <span class="item">Vu The Quan</span>
                             <span class="item">a Front-end Developer</span>
                         </div>
-                        <p class="home__brief animate__animated animate__fadeInLeft delay-7">I'm passionate about
+                        <p class="home__brief animate__animated animate__fadeInLeft wow" data-wow-delay="4.4s">
+                            I'm passionate about
                             learning new
                             technologies and always
                             keep concentrated on improving my self skills. Being patient
                             and responsible for working help me implement completely assigned tasks.</p>
                     </div>
-                    <div class="home__about__cv animate__animated animate__fadeInLeft delay-9">
+                    <div class="home__about__cv animate__animated animate__fadeInLeft wow" data-wow-delay="4.6s">
                         <button class="btn btn-cv darken-4 waves-light waves-effect">
                             <a href="./assets/files/Vu_The_Quan_CV.pdf" download="Vu_The_Quan_CV">
                                 <i class="material-icons">file_download</i>
@@ -109,13 +128,15 @@
                 </div>
                 <div class="col s12 l7 home__img hide-on-med-and-down">
                     <div class="home__img__block">
-                        <img class="potrait-1 animate__animated animate__fadeInUp delay-10"
+                        <img class="potrait-1 animate__animated animate__fadeInUp wow" data-wow-delay="5s"
                             src="./assets/img/potrait.png" alt="">
-                        <div class="circle__background animate__animated animate__zoomIn animate__cubic"></div>
+                        <div class="circle__background animate__animated animate__zoomIn animate__cubic wow"
+                            data-wow-delay="4s"></div>
                     </div>
                 </div>
             </div>
-            <div class="home__social hide-on-small-and-down animate__animated animate__fadeIn delay-5" id="mySocial">
+            <div class="home__social hide-on-small-and-down animate__animated animate__fadeIn wow" data-wow-delay="4.5s"
+                id="mySocial">
                 <div class="social__container">
                     <ul id="social__link" class="show">
                         <li>
@@ -160,13 +181,14 @@
                 </div>
 
             </div>
-            <a href="#about" class="home__see-more hide-on-med-and-down animate__animated animate__fadeInUp delay-10">
+            <a href="#about" class="home__see-more hide-on-med-and-down animate__animated animate__fadeInUp wow"
+                data-wow-delay="5s">
                 <span class="dot"></span>
                 <span class="line"></span>
             </a>
         </div>
-        <img class="home__portrait hide-on-small-and-down hide-on-large-only hide-on-extra-large-only"
-            src="./assets/img/potrait.png" alt="">
+        <img class="home__portrait hide-on-small-and-down hide-on-large-only hide-on-extra-large-only animate__animated animate__fadeInUp wow"
+            data-wow-delay="4.2s" src="./assets/img/potrait.png" alt="">
     </section>
 
     <!-- ABOUT -->
@@ -739,36 +761,44 @@
                                 </span>
                                 <a href="https://www.facebook.com/vu.quan3/" target="_blank">@vuquan</a>
                             </li>
+                            <li>
+                                <span>
+                                    <i class="material-icons">email</i></i>
+                                    Email
+                                </span>
+                                <a href="#!"">vtquan124@gmail.com</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col s12 m6 l6 footer__send">
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" id="name" name="Name" required>
-                                <label for="name" class="form__input">Full name<sup>*</sup>
-                                </label>
-                                <span id="name__error">Name required</span>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="email" name="Email" required>
-                                <label for="email" class="form__input">Email<sup>*</sup>
-                                </label>
-                                <span id="email__error">Email required</span>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="subject">
-                                <label for="subject" class="form__input">Subject
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="Message" cols="50" rows="10"></textarea>
-                                <label for="message" class="form__input">Message<sup>*</sup>
-                                </label>
-                                <span id="message__error">Message required</span>
-                            </div>
-                            <button type="submit" class="btn btn-submit  waves-effect waves-light" id="send">Send
-                                Message</button>
-                        </form>
+                    <div class=" col s12 m6 l6 footer__send">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="text" id="name" name="Name" required>
+                                            <label for="name" class="form__input">Full name<sup>*</sup>
+                                            </label>
+                                            <span id="name__error">Name required</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="email" name="Email" required>
+                                            <label for="email" class="form__input">Email<sup>*</sup>
+                                            </label>
+                                            <span id="email__error">Email required</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="subject">
+                                            <label for="subject" class="form__input">Subject
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea id="message" name="Message" cols="50" rows="10"></textarea>
+                                            <label for="message" class="form__input">Message<sup>*</sup>
+                                            </label>
+                                            <span id="message__error">Message required</span>
+                                        </div>
+                                        <button type="submit" class="btn btn-submit  waves-effect waves-light"
+                                            id="send">Send
+                                            Message</button>
+                                    </form>
                     </div>
                 </div>
             </div>

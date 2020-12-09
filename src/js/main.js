@@ -42,6 +42,15 @@ window.onresize = () => {
 };
 window.onload = () => {
   windowResize();
+  setTimeout(() => {
+    queryElement("body").classList.remove("preloading");
+  }, 4000);
+  setTimeout(() => {
+    getElementByID("preload").classList.add("animate__fadeOut");
+  }, 3000);
+  setTimeout(() => {
+    getElementByID("preload").style.display = "none";
+  }, 4000);
 };
 
 window.onscroll = () => {
