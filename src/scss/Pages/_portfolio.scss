@@ -32,6 +32,23 @@
         box-shadow: 0 2.8px 2.3px -34px rgba(0, 49, 52, 0.206),
           0 9.4px 7.8px -34px rgba(0, 49, 52, 0.304),
           0 42px 35px -34px rgba(0, 49, 52, 0.51);
+        a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          background-color: $color-red-5;
+          transition: all 0.3s;
+          transform: translateX(-100%);
+          i {
+            font-size: $fs-6;
+            color: $color-white;
+          }
+        }
         &:hover {
           a {
             transform: translateX(0);
@@ -94,6 +111,36 @@
     .swiper-pagination-bullet-active {
       background-color: $color-green-5;
       opacity: 1;
+    }
+  }
+}
+.project__video {
+  overflow-y: unset;
+  top: 20% !important;
+  height: 400px;
+  width: 620px;
+  .video__content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .modal-content {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    a {
+      position: absolute;
+      right: 0;
+      top: -8%;
+      z-index: 1003;
+      i {
+        font-size: $fs-3;
+        color: $color-white;
+      }
     }
   }
 }

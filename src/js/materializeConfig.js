@@ -14,3 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     throttle: 0,
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".modal");
+  var instances = M.Modal.init(elems);
+});
