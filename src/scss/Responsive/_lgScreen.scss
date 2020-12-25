@@ -100,6 +100,24 @@
       }
     }
   }
+  @include responsive(1380px) {
+    .home__container {
+      .home__about {
+        padding-top: $pd-20 + 10;
+        .home__about__content {
+          .home__name {
+            h1 {
+              font-size: 3.8rem;
+              margin-right: -50px;
+            }
+          }
+          .home__brief {
+            padding: $pd-10 $pd-14 $pd-8 0;
+          }
+        }
+      }
+    }
+  }
   @include responsive(1440px) {
     .home__container {
       .home__about {

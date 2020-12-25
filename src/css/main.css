@@ -1540,7 +1540,7 @@ body {
 }
 
 #skills .skills__container ul li .skills__item {
-  width: 100px;
+  width: 110px;
   height: 40px;
   margin-right: 15px;
   border: 2px solid rgba(0, 49, 52, 0.7);
@@ -1825,6 +1825,19 @@ body {
   #home.home__portrait--lg .home__container .home__see-more {
     left: 0;
     transform: unset;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  #home .home__container .home__about {
+    padding-top: 110px;
+  }
+  #home .home__container .home__about .home__about__content .home__name h1 {
+    font-size: 3.8rem;
+    margin-right: -50px;
+  }
+  #home .home__container .home__about .home__about__content .home__brief {
+    padding: 50px 70px 40px 0;
   }
 }
 
